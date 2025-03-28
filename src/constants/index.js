@@ -38,6 +38,9 @@ import aiicon from '../assets/ai.svg'
 import webicon from '../assets/globe.svg'
 import dataicon from '../assets/data.svg'
 import backendicon from '../assets/backend.svg'
+import book from '../assets/book.svg'
+import bike from '../assets/bike.svg'
+import teach from '../assets/teach.svg'
 
 export const navLinks = [
   {
@@ -45,8 +48,24 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "education",
+    title: "Education",
+  },
+  {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "tech",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "hobbies",
+    title: "Hobbies",
   },
   {
     id: "contact",
@@ -281,6 +300,27 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+  },
+];
+
+export const hobbies = [
+  {
+    title: "Reading",
+    icon: book, 
+    description:
+      "I enjoy reading books on technology, science and Engineering. Reading expands my knowledge and inspires me to learn new things. One of my favorite books is 'Applied Pattern Recognition in C++' by Andrew Hunt and Paulus, Dietrich W. R which has greatly influenced me in my field.",
+  },
+  {
+    title: "Cycling",
+    icon: bike, 
+    description:
+      "Cycling for me is not for exercise, but a way to explore new places and enjoy nature. I love riding my bike around the city and discovering new parks and trails. It's a great way to clear my mind and experience freedom.",
+  },
+  {
+    title: "Teaching",
+    icon: teach, 
+    description:
+    "Before I started my university journey, I spent about 1 year in the education field where i worked as a program assistant in 3 different kids camps. Now, i enjoy making educational content on my YouTube channel and sharing my knowledge with others. I believe that teaching is a great way to reinforce my own understanding of the material and help others learn.",
   },
 ];
 

@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { FaMapMarkerAlt } from 'react-icons/fa'; // Import location icon
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -47,7 +48,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-[#EC7FA9] text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm Studying Software Engineering at York University. I have experience in languages like Python, Java, and JavaScript/TypeScript. I enjoy ML and Data Science in Python and C++, full-stack development with React Native, ReactJS, NextJS and backend development with Flask, Spring Boot, and ExpressJS. My goal is to learn something new every day through school, LeetCode, projects, or any other activity. I believe that every bit of knowledge gained, no matter how small, represents progress.
+        <span className="inline-flex items-center gap-2 mb-2">
+          <FaMapMarkerAlt className="text-[#EC7FA9] text-xl" />
+          <span className="text-[#F5EFE7] font-medium">Toronto, Canada</span>
+        </span>
+        <br />
+        I'm Currently Studying Software Engineering At York University. I Have Experience In Programming Languages Such As Python, Java, And JavaScript/TypeScript. My Interests Include Machine Learning And Data Science Using Python And C++, As Well As Full-Stack Development With Frameworks Like React Native, ReactJS, And NextJS. On The Backend, I Enjoy Working With Flask, Spring Boot, And ExpressJS. My Goal Is To Learn Something New Every Day, Whether Through School, LeetCode, Personal Projects, Or Other Activities. I Firmly Believe That Every Bit Of Knowledge Gained, No Matter How Small, Represents Progress.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

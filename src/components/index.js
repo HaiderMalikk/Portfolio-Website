@@ -8,6 +8,7 @@ import Works from "./Works";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Education from './Education';
+import Hobbies from './Hobbies';
 
 export {
   Hero,
@@ -22,5 +23,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Education
+  Education,
+  Hobbies
 };

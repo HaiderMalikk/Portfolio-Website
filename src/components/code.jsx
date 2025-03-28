@@ -58,26 +58,38 @@ const Code = () => {
     }
     
     // Show Python prompt after typing "python3"
-    if (displayState.pythonText === "python3" && !displayState.showPythonPrompt) {
-      const timer = setTimeout(() => {
-        setDisplayState(prev => ({
-          ...prev,
-          showPythonPrompt: true
-        }));
-      }, 300);
-      return () => clearTimeout(timer);
-    }
-    
-    // Type out print command
-    if (displayState.showPythonPrompt && displayState.printCommandText.length < "print(\"Hi There!\")".length) {
-      const timer = setTimeout(() => {
-        setDisplayState(prev => ({
-          ...prev,
-          printCommandText: "print(\"Hi There!\")".substring(0, prev.printCommandText.length + 1)
-        }));
-      }, 100);
-      return () => clearTimeout(timer);
-    }
+if (displayState.pythonText === "python3" && !displayState.showPythonPrompt) {
+  const timer = setTimeout(() => {
+    setDisplayState(prev => ({
+      ...prev,
+      showPythonPrompt: true
+    }));
+  }, 500); // Changed from 300ms to 500ms
+  return () => clearTimeout(timer);
+}
+
+// Add another delay before starting to type the print command
+if (displayState.showPythonPrompt && displayState.printCommandText.length === 0) {
+  const timer = setTimeout(() => {
+    setDisplayState(prev => ({
+      ...prev,
+      printCommandText: "p"
+    }));
+  }, 500); // New delay of 500ms before starting to type
+  return () => clearTimeout(timer);
+}
+
+// Type out print command (no changes needed here)
+if (displayState.showPythonPrompt && displayState.printCommandText.length > 0 && 
+    displayState.printCommandText.length < "print(\"Hi There!\")".length) {
+  const timer = setTimeout(() => {
+    setDisplayState(prev => ({
+      ...prev,
+      printCommandText: "print(\"Hi There!\")".substring(0, prev.printCommandText.length + 1)
+    }));
+  }, 100);
+  return () => clearTimeout(timer);
+}
     
     // Show output after typing print command
     if (displayState.printCommandText === "print(\"Hi There!\")" && !displayState.showOutput) {

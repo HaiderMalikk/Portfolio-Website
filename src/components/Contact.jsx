@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
@@ -12,14 +12,16 @@ import youtube from "../assets/youtube.png";
 const Contact = () => {
   return (
     <div className="xl:mt-12 flex flex-col gap-10 overflow-hidden">
-      <p className={styles.sectionSubText}>Get in touch</p>
+    <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>Get in touch</p>
+            <h2 className={styles.sectionHeadText}>Contact.</h2>
+          </motion.div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-cardBg p-8 rounded-2xl"
       >
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <div className="mt-10 flex flex-col gap-4">
+        <div className="mt-0 flex flex-col gap-4">
           <div className="flex items-center gap-4">
             <div className="flex justify-center items-center w-10 h-10 rounded-full bg-textwhite">
               <i className="fa fa-envelope text-[#F5EFE7] text-[18px]"></i>
