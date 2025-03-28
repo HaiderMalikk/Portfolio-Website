@@ -17,7 +17,7 @@ import {
   docker,
   meta,
   starbucks,
-  tesla,
+  tesla, 
   shopify,
   carrent,
   jobit,
