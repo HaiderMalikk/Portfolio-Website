@@ -15,13 +15,13 @@ const Contact = () => {
       <p className={styles.sectionSubText}>Get in touch</p>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-[#EC7FA9] p-8 rounded-2xl"
+        className="flex-[0.75] bg-cardBg p-8 rounded-2xl"
       >
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <div className="mt-10 flex flex-col gap-4">
           <div className="flex items-center gap-4">
-            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#F5EFE7]">
+            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-textwhite">
               <i className="fa fa-envelope text-[#F5EFE7] text-[18px]"></i>
               <img src={mail} alt="Email" className="w-5 h-5" />
             </div>
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#F5EFE7]">
+            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-textwhite">
               <i className="fa fa-github text-[#F5EFE7] text-[18px]"></i>
               <img src={github} alt="GitHub" className="w-5 h-5" />
             </div>
