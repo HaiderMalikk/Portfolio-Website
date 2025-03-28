@@ -27,7 +27,7 @@ import {
 import python from "../assets/tech/python.png"
 import java from "../assets/tech/java.png"
 import next from "../assets/tech/next.webp"
-import c from "../assets/tech/c.png"
+import c from "../assets/tech/C.png"
 import cpp from "../assets/tech/cpp.png"
 import pytorch from "../assets/tech/pytorch.png"
 import tf from "../assets/tech/tf.png"
