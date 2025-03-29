@@ -157,149 +157,111 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#F5EFE7",
-    date: "March 2020 - April 2021",
+    title: "AI Finance Intern",
+    company_name: "CAPRiser Advisory",
+    iconBg: "#EC7FA9",
+    date: "March 2025 - May 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built an AI-powered financial analysis system to evaluate market trends and investment opportunities.",
+      "Integrated real-time financial data APIs (e.g., Yahoo Finance) for key indicators like RSI, moving averages, and volatility.",
+      "Designed ML models in Python for stock prediction, ensuring accuracy via real-world validation.",
+      "Led AWS deployment, optimizing scalability and real-time data processing.",
+      "Created technical documentation for seamless project handover",
+      "Collaborated in a fast-paced, research-driven environment with the CEO and developers.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Reddish Trends",
+    description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Flask", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
+      { name: "Firebase", color: "pink-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/HaiderMalikk/Reddish-Trends",
+    live_site_link: "https://www.reddishtrends.com", // This project has a website link
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Mood Atlas",
+    description: "Mood Finder is an app that recommends destinations based on user moods or feelings. It uses Google Places API for location data and Google Maps API to display the recommended places. It uses OpenAI API to analyze the mood of the user and recommend places based on that.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Flask", color: "blue-text-gradient" },
+      { name: "SpringBoot", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
+      { name: "Java", color: "green-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "SQL", color: "pink-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/HaiderMalikk/Mood-Atlas",
+    live_site_link: "https://mood-atlas.vercel.app", // This project has a website link
+  },
+  // The rest of the projects have only GitHub links (no live_site_link property)
+  {
+    name: "Neural Network Circuit Optimizer",
+    description: "The Neural Network Circuit Optimizer, built on my custom digital circuit simulator, uses AI and machine learning to optimize simple digital circuits.",
+    tags: [
+      { name: "Python", color: "green-text-gradient" },
+      { name: "C++", color: "green-text-gradient" },
+      { name: "Tensorflow", color: "blue-text-gradient" },
+      { name: "PyTorch", color: "blue-text-gradient" },
+      { name: "Pandas", color: "blue-text-gradient" },
+      { name: "Neural Networks", color: "pink-text-gradient" },
+      { name: "Machine Learning", color: "pink-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" },
+      { name: "SQL", color: "pink-text-gradient" },
+    ],
+    source_code_link: "https://github.com/HaiderMalikk/Neural-Network-Circuit-Optimizer",
+  },
+  // Add the new projects
+  {
+    name: "Supa Charge",
+    description:
+    "Supa Charge is a app that allows users to find electric vehicle charging stations. it uses Google Places API for location data and Google Maps API to display the recommended places.",
+    tags: [
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Xcode", color: "blue-text-gradient" },
+      { name: "JavaScript", color: "green-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "Firebase", color: "pink-text-gradient" },
+    ],
+    source_code_link: "https://github.com/HaiderMalikk/Supa-Charger-App",
   },
   {
-    name: "Trip Guide",
+    name: "Smart Paper Summarizer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Smart Paper Summarizer is an AI tool that summarizes educational papers. It uses PyPDF to extract text, OpenAI’s Ada for text embeddings, and Chroma to store and query these embeddings. The context is then passed to GPT-4 mini, which generates concise and accurate summaries.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Streamlit", color: "blue-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
+      { name: "Chroma", color: "pink-text-gradient" },
+      { name: "Pandas", color: "pink-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/HaiderMalikk/Smart-Paper-Summarizer",
+  },
+  {
+    name: "Chess Engine and Smart Bot",
+    description:
+      "My Chess Game Made with Pygame. The game includes a chess game engine, chess bot and its smart move finder. The game can be played with another person or a Chess bot powered by powerful algorithms and data. ELO: 1200",
+    tags: [
+      { name: "Python", color: "green-text-gradient" },
+      { name: "Pygame", color: "blue-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" },
+      { name: "Chess", color: "pink-text-gradient" },
+      { name: "Algorithms", color: "pink-text-gradient" },
+    ],
+    source_code_link: "https://github.com/HaiderMalikk/Chess",
   },
 ];
 
@@ -324,4 +286,4 @@ export const hobbies = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

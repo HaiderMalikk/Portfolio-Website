@@ -27,7 +27,7 @@ const Contact = () => {
               <i className="fa fa-envelope text-[#F5EFE7] text-[18px]"></i>
               <img src={mail} alt="Email" className="w-5 h-5" />
             </div>
-            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[18px]">
+            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
               haidermalik662@gmail.com
             </a>
           </div>
@@ -37,7 +37,7 @@ const Contact = () => {
               <i className="fa fa-github text-[#F5EFE7] text-[18px]"></i>
               <img src={github} alt="GitHub" className="w-5 h-5" />
             </div>
-            <a href="https://github.com/HaiderMalikk" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px]">
+            <a href="https://github.com/HaiderMalikk" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
               github.com/HaiderMalikk
             </a>
           </div>
@@ -47,7 +47,7 @@ const Contact = () => {
               <i className="fa fa-linkedin text-[#F5EFE7] text-[18px]"></i>
               <img src={linkedin} alt="LinkedIn" className="w-5 h-5" />
             </div>
-            <a href="https://www.linkedin.com/in/haider-malikk/" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px]">
+            <a href="https://www.linkedin.com/in/haider-malikk/" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
               linkedin.com/in/haider-malikk
             </a>
           </div>
@@ -57,7 +57,7 @@ const Contact = () => {
               <i className="fa fa-youtube-play text-[#F5EFE7] text-[18px]"></i>
               <img src={youtube} alt="YouTube" className="w-5 h-5" />
             </div>
-            <a href="https://www.youtube.com/@interestingly05" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px]">
+            <a href="https://www.youtube.com/@interestingly05" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
               youtube.com/@interestingly05
             </a>
           </div>
