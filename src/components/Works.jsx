@@ -139,10 +139,9 @@ const ProjectCard = ({
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
-            alt='project_image'
+            alt={`${name} project thumbnail - ${description.substring(0, 50)}...`}
             className='w-full h-full object-cover rounded-2xl'
           />
-
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             {/* Live site link button - only render when live_site_link exists */}
             {live_site_link && (
