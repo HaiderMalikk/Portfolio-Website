@@ -57,8 +57,8 @@ const Contact = () => {
               <i className="fa fa-youtube-play text-[#F5EFE7] text-[18px]"></i>
               <img src={youtube} alt="YouTube" className="w-5 h-5" />
             </div>
-            <a href="https://www.youtube.com/@interestingly05" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
-              youtube.com/@interestingly05
+            <a href="https://www.youtube.com/@greenbytecode" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
+              youtube.com/@greenbytecode
             </a>
           </div>
         </div>

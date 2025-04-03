@@ -17,7 +17,7 @@ const App = () => {
               "sameAs": [
                 "https://github.com/HaiderMalikk",
                 "https://www.linkedin.com/in/haider-malikk/",
-                "https://www.youtube.com/@interestingly05"
+                "https://www.youtube.com/@greenbytecode"
               ],
               "jobTitle": "Software Engineering Student",
               "worksFor": {
