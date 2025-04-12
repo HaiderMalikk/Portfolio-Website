@@ -157,7 +157,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "AI Finance Intern",
+    title: "AI/ML Engineer Intern",
     company_name: "CAPRiser Advisory",
     iconBg: "#EC7FA9",
     date: "March 2025 - May 2025",

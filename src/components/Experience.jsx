@@ -17,7 +17,7 @@ import work from "../assets/company/work.jpeg"; // Make sure this path is correc
 // Modify the experiences array to leave only the Starbucks entry
 const experiences = [
   {
-    title: "AI Finance Intern",
+    title: "AI/ML Engineer Intern",
     company_name: "CAPRiser Advisory",
     icon: work,
     iconBg: "#EC7FA9",
