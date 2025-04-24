@@ -15,8 +15,27 @@ import pg3 from "../assets/pg3.png"; // Placeholder image for new projects
 import pg4 from "../assets/pg4.png"; // Placeholder image for new projects
 import pg5 from "../assets/pg5.png"; // Placeholder image for new projects
 import pg6 from "../assets/pg6.png"; // Placeholder image for new projects
+import fp1 from "../assets/slabs.png"; // Placeholder image for new projects
 // Import website icon
 import website from "../assets/website.png"; 
+
+// Add this to your projects array in Works.jsx
+const featuredProject = {
+  name: "SYNOVA LABS",
+  description: 
+  "SYNOVA LABS is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the <a href='https://github.com/SYNOVA-LABS/ADA' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>ADA</a> model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
+  tags: [
+    { name: "Python", color: "green-text-gradient" },
+    { name: "Sqlite", color: "green-text-gradient" },
+    { name: "AI/ML", color: "green-text-gradient" },
+    { name: "Computer Vision", color: "pink-text-gradient" },
+    { name: "AI Agents", color: "pink-text-gradient" },
+    { name: "OpenAI API", color: "pink-text-gradient" },
+  ],
+  image: fp1, // Use an appropriate image from your imports
+  source_code_link: "https://github.com/YourUsername/ai-portfolio-generator",
+  featured: true // Add this property to identify featured projects
+};
 
 const projects = [
   // First two projects have both GitHub and website links
@@ -106,8 +125,8 @@ const projects = [
     description:
       "My Chess Game Made with Pygame. The game includes a chess game engine, chess bot and its smart move finder. The game can be played with another person or a Chess bot powered by powerful algorithms and data. ELO: 1200",
     tags: [
-      { name: "Python", color: "green-text-gradient" },
       { name: "Pygame", color: "blue-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
       { name: "AI", color: "pink-text-gradient" },
       { name: "Chess", color: "pink-text-gradient" },
       { name: "Algorithms", color: "pink-text-gradient" },
@@ -116,6 +135,89 @@ const projects = [
     source_code_link: "https://github.com/HaiderMalikk/Chess",
   },
 ];
+
+// Add this component before the ProjectCard component
+const FeaturedProjectCard = ({
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  live_site_link,
+}) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", 0.2, 0.75)}>
+      <Tilt
+        options={{
+          max: 25,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-cardBg p-5 rounded-2xl w-full '
+      >
+        <div className='flex flex-col lg:flex-row gap-6'>
+          {/* Image section */}
+          <div className='relative lg:w-1/2 w-full h-[300px]'>
+            <img
+              src={image}
+              alt={`${name} project thumbnail`}
+              className='w-full h-full object-cover rounded-2xl'
+            />
+
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              {/* Live site link button */}
+              {live_site_link && (
+                <div
+                  onClick={() => window.open(live_site_link, "_blank")}
+                  className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer mr-2'
+                >
+                  <img
+                    src={website}
+                    alt='live site'
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
+              )}
+              {/* GitHub repository link button */}
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Content section */}
+          <div className='lg:w-1/2 w-full flex flex-col justify-between'>
+            <div>
+              <h3 className='text-[#F5EFE7] font-bold text-[28px]'>{name}</h3>
+              <p 
+                className='mt-4 text-[#F5EFE7] text-[16px]'
+                dangerouslySetInnerHTML={{ __html: description }}
+              ></p>
+            </div>
+
+            <div className='mt-6 flex flex-wrap gap-2'>
+              {tags.map((tag) => (
+                <p
+                  key={`${name}-${tag.name}`}
+                  className={`text-[14px] ${tag.color}`}
+                >
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Tilt>
+    </motion.div>
+  );
+};
 
 const ProjectCard = ({
   index,
@@ -192,6 +294,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const featuredProjects = [featuredProject];
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -211,6 +314,15 @@ const Works = () => {
           And My Passion For Building Meaningful Applications.
         </motion.p>
       </div>
+
+      {/* Featured Projects */}
+      {featuredProjects.length > 0 && (
+        <div className='mt-20 flex flex-col gap-10'>
+          {featuredProjects.map((project) => (
+            <FeaturedProjectCard key={`featured-${project.name}`} {...project} />
+          ))}
+        </div>
+      )}
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (

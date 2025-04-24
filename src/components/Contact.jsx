@@ -9,6 +9,25 @@ import github from "../assets/github-2.png";
 import linkedin from "../assets/linkedin.png";
 import youtube from "../assets/youtube.png";
 
+// Link icon component
+const LinkIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="16" 
+    height="16" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className="ml-2 text-[#F5EFE7]"
+  >
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+);
+
 const Contact = () => {
   return (
     <div className="xl:mt-12 flex flex-col gap-10 overflow-hidden">
@@ -27,8 +46,9 @@ const Contact = () => {
               <i className="fa fa-envelope text-[#F5EFE7] text-[18px]"></i>
               <img src={mail} alt="Email" className="w-5 h-5" />
             </div>
-            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
+            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center">
               haidermalik662@gmail.com
+              <LinkIcon />
             </a>
           </div>
 
@@ -37,8 +57,9 @@ const Contact = () => {
               <i className="fa fa-github text-[#F5EFE7] text-[18px]"></i>
               <img src={github} alt="GitHub" className="w-5 h-5" />
             </div>
-            <a href="https://github.com/HaiderMalikk" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
+            <a href="https://github.com/HaiderMalikk" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center">
               github.com/HaiderMalikk
+              <LinkIcon />
             </a>
           </div>
 
@@ -47,8 +68,9 @@ const Contact = () => {
               <i className="fa fa-linkedin text-[#F5EFE7] text-[18px]"></i>
               <img src={linkedin} alt="LinkedIn" className="w-5 h-5" />
             </div>
-            <a href="https://www.linkedin.com/in/haider-malikk/" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
+            <a href="https://www.linkedin.com/in/haider-malikk/" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center">
               linkedin.com/in/haider-malikk
+              <LinkIcon />
             </a>
           </div>
           
@@ -57,8 +79,9 @@ const Contact = () => {
               <i className="fa fa-youtube-play text-[#F5EFE7] text-[18px]"></i>
               <img src={youtube} alt="YouTube" className="w-5 h-5" />
             </div>
-            <a href="https://www.youtube.com/@greenbytecode" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D]">
+            <a href="https://www.youtube.com/@greenbytecode" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center">
               youtube.com/@greenbytecode
+              <LinkIcon />
             </a>
           </div>
         </div>
