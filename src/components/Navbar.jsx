@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { logo, menu, close } from "../assets";
 
-// Update the navLinks array to match the new sections
-
+// Update the navLinks array to include the papers section
 const navLinks = [
   {
     id: "about",
@@ -26,6 +25,10 @@ const navLinks = [
   {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "papers",
+    title: "Papers",
   },
   {
     id: "hobbies",

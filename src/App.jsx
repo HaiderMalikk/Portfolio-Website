@@ -1,12 +1,24 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Helmet } from "react-helmet"; 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, Education, Hobbies } from "./components";
+import { 
+  About, 
+  Contact, 
+  Experience, 
+  Hero, 
+  Navbar, 
+  Tech, 
+  Works, 
+  Papers, // Import Papers component 
+  StarsCanvas, 
+  Education, 
+  Hobbies 
+} from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
-          <Helmet>
+      <Helmet>
         <script type="application/ld+json">
           {`
             {
@@ -40,6 +52,7 @@ const App = () => {
           <Experience />
           <Tech />
           <Works />
+          <Papers /> {/* Add Papers component here, after Works */}
           <Hobbies />
           <Contact />
         </div>

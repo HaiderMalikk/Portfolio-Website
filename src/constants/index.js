@@ -278,6 +278,37 @@ const projects = [
   },
 ];
 
+// Make sure this papers array is properly defined 
+export const papers = [
+  {
+    title: "AI-Driven Document Summarization Solutions for Docsumo",
+    description: "This study investigates how Docsumo's intelligent document processing technology can incorporate AI-driven document summarization. The study looks into the summarization tools that are already available,notes how much time users spend manually interpreting data that has been collected, and suggests an AI-based solution that works with Docsumo's technology stack. It is advised to use a hybrid strategy thatcombines extractive and abstractive summarization, utilizing pretrained transformer models that havebeen refined on both structured and unstructured business documents. The ultimate objective is toestablish Docsumo as a pioneer in intelligent document summarizing by automating insights production,improving user experience, and stimulating product innovation.",
+    authors: "Haider Malik",
+    date: "April 2025",
+    tags: [
+      { name: "Document Summarization", color: "blue-text-gradient" },
+      { name: "OCR", color: "green-text-gradient" },
+      { name: "NLP", color: "pink-text-gradient" },
+    ],
+    image: "/src/assets/paper2.png", // Using an existing image from your project
+    pdfUrl: "https://drive.google.com/file/d/1Rfe7JC4U6kIsE9kh_Iu-_34pu57CLOfH/preview",
+  },
+  {
+    title: "Enhancing Safety Certification of AI-Driven Autonomous Systemsthrough Explainable AI, Regression Testing, and StandardizedRegulations",
+    description: 
+    "Artificial intelligence (AI) has transformed operational capabilities and efficiency through itsquick integration into autonomous systems, which span industries like aircraft, healthcare, andtransportation. Nevertheless, this development poses serious difficulties for guaranteeing thesecurity and dependability of these AI-powered systems. For AI applications with probabilisticbehaviours and learning capabilities, traditional certification procedures—which were created fordeterministic systems—are frequently insufficient.",
+    authors: "Haider Malik",
+    date: "March 2025",
+    tags: [
+      { name: "Explainable AI", color: "blue-text-gradient" },
+      { name: "AI Safety", color: "green-text-gradient" },
+      { name: "AI and Ethics", color: "pink-text-gradient" },
+    ],
+    image: "/src/assets/paper1.png", // Using an existing image from your project
+    pdfUrl: "https://drive.google.com/file/d/1wLUPWPMxPZWVOqfXA9AEQhP8St7H26-q/preview",
+  }
+];
+
 export const hobbies = [
   {
     title: "Reading",
