@@ -33,7 +33,7 @@ const featuredProject = {
     { name: "OpenAI API", color: "pink-text-gradient" },
   ],
   image: fp1, // Use an appropriate image from your imports
-  source_code_link: "https://github.com/YourUsername/ai-portfolio-generator",
+  source_code_link: "https://github.com/SYNOVA-LABS",
   featured: true // Add this property to identify featured projects
 };
 
