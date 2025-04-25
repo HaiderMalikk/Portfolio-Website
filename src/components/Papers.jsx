@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { github } from "../assets"; // Importing the github icon for reference
+import paper1 from '../assets/paper1.png';
+import paper2 from '../assets/paper2.png';
 
 const papers = [
   {
@@ -17,7 +19,7 @@ const papers = [
       { name: "OCR", color: "green-text-gradient" },
       { name: "NLP", color: "pink-text-gradient" },
     ],
-    image: "/src/assets/paper2.png", // Using an existing image from your project
+    image: paper2, // Using an existing image from your project
     pdfUrl: "https://drive.google.com/file/d/1Rfe7JC4U6kIsE9kh_Iu-_34pu57CLOfH/preview",
   },
   {
@@ -31,7 +33,7 @@ const papers = [
       { name: "AI Safety", color: "green-text-gradient" },
       { name: "AI and Ethics", color: "pink-text-gradient" },
     ],
-    image: "/src/assets/paper1.png", // Using an existing image from your project
+    image: paper1, // Using an existing image from your project
     pdfUrl: "https://drive.google.com/file/d/1wLUPWPMxPZWVOqfXA9AEQhP8St7H26-q/preview",
   }
 ];
