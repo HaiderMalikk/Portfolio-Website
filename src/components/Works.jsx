@@ -15,27 +15,27 @@ import pg3 from "../assets/pg3.png"; // Placeholder image for new projects
 import pg4 from "../assets/pg4.png"; // Placeholder image for new projects
 import pg5 from "../assets/pg5.png"; // Placeholder image for new projects
 import pg6 from "../assets/pg6.png"; // Placeholder image for new projects
-import fp1 from "../assets/slabs.png"; // Placeholder image for new projects
+import fp1 from "../assets/proximum.png"; // Placeholder image for new projects
 // Import website icon
 import website from "../assets/website.png"; 
 
 // Add this to your projects array in Works.jsx
 const featuredProject = {
-  name: "SYNOVA LABS",
+  name: "Proximum AI",
   description: 
-  "SYNOVA LABS is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the <a href='https://github.com/SYNOVA-LABS/ADA' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>ADA</a> model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
+  "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. The goal is to create intelligent systems that can understand and interact with the world in meaningful ways, combining futuristic ideas with AI to make them a reality. The latest addition to this project is the <a href='https://github.com/Proximum-AI/ADA' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>ADA</a> model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
   tags: [
     { name: "Python", color: "green-text-gradient" },
-    { name: "Sqlite", color: "green-text-gradient" },
-    { name: "AI/ML", color: "green-text-gradient" },
+    { name: "Artificial Intelligence", color: "green-text-gradient" },
+    { name: "Machine Learning", color: "green-text-gradient" },
     { name: "Computer Vision", color: "pink-text-gradient" },
     { name: "AI Agents", color: "pink-text-gradient" },
-    { name: "OpenAI API", color: "pink-text-gradient" },
+    { name: "Intelligent Systems", color: "pink-text-gradient" },
   ],
   image: fp1, // Use an appropriate image from your imports
-  source_code_link: "https://github.com/SYNOVA-LABS",
+  source_code_link: "https://github.com/Proximum-AI",
   featured: true // Add this property to identify featured projects
-};
+};  
 
 const projects = [
   // First two projects have both GitHub and website links
@@ -157,7 +157,7 @@ const FeaturedProjectCard = ({
       >
         <div className='flex flex-col lg:flex-row gap-6'>
           {/* Image section */}
-          <div className='relative lg:w-1/2 w-full h-[300px]'>
+          <div className='relative lg:w-1/2 w-full h-[345px]'>
             <img
               src={image}
               alt={`${name} project thumbnail`}

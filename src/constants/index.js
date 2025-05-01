@@ -175,8 +175,8 @@ const experiences = [
 
 const projects = [
   {
-    name: "SYNOVA Labs",
-    description: "SYNOVA LABS is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the ADA model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
+    name: "Proximum AI",
+    description: "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the ADA model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
       { name: "Sqlite", color: "green-text-gradient" },
@@ -185,7 +185,7 @@ const projects = [
       { name: "AI Agents", color: "pink-text-gradient" },
       { name: "OpenAI API", color: "pink-text-gradient" },
     ],
-    source_code_link: "https://github.com/SYNOVA-LABS",
+    source_code_link: "https://github.com/Proximum-AI",
   },
   {
     name: "Reddish Trends",
