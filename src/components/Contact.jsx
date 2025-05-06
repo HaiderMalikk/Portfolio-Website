@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
@@ -8,6 +8,7 @@ import mail from "../assets/mail.png";
 import github from "../assets/github-2.png";
 import linkedin from "../assets/linkedin.png";
 import youtube from "../assets/youtube.png";
+import discord from "../assets/discord.png";
 
 // Link icon component
 const LinkIcon = () => (
@@ -29,12 +30,22 @@ const LinkIcon = () => (
 );
 
 const Contact = () => {
+  const [copyMessage, setCopyMessage] = useState("");
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopyMessage("Username copied to clipboard!");
+    setTimeout(() => {
+      setCopyMessage("");
+    }, 3000);
+  };
+
   return (
     <div className="xl:mt-12 flex flex-col gap-10 overflow-hidden">
-    <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>Get in touch</p>
-            <h2 className={styles.sectionHeadText}>Contact.</h2>
-          </motion.div>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Get in touch</p>
+        <h2 className={styles.sectionHeadText}>Contact.</h2>
+      </motion.div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-cardBg p-8 rounded-2xl"
@@ -84,7 +95,41 @@ const Contact = () => {
               <LinkIcon />
             </a>
           </div>
+
+          <div className="flex items-center gap-4">
+            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#F5EFE7]">
+              <i className="fa fa-youtube-play text-[#F5EFE7] text-[18px]"></i>
+              <img src={discord} alt="Discord" className="w-6 h-6" />
+            </div>
+            <button 
+              onClick={() => copyToClipboard("___haider___")} 
+              className="text-[#F5EFE7] text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center cursor-pointer"
+            >
+              ___haider___
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="16" 
+                height="16" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="ml-2 text-[#F5EFE7]"
+              >
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
         </div>
+        
+        {copyMessage && (
+          <div className="mt-4 p-2 bg-[#F5EFE7] text-[#1A1A1D] rounded text-center">
+            {copyMessage}
+          </div>
+        )}
       </motion.div>
     </div>
   );

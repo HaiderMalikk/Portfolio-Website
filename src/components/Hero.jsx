@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import './styles-comp.css'
 
 import { styles } from "../styles";
-import Code from "./code";
+import Links from "./Links";
 import me from '../assets/IMG_me.png'
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
             AI Engineer & Full-Stack Developer
           </p>
           <div className="mt-20">
-        <Code />
+        <Links />
           </div>
         </div>
       </div>
