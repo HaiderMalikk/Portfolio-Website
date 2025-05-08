@@ -99,7 +99,7 @@ const Contact = () => {
           <div className="flex items-center gap-4">
             <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#F5EFE7]">
               <i className="fa fa-youtube-play text-[#F5EFE7] text-[18px]"></i>
-              <img src={discord} alt="Discord" className="w-6 h-6" />
+              <img src={discord} alt="Discord" className="w-6 h-6 mb-[2px]" />
             </div>
             <button 
               onClick={() => copyToClipboard("___haider___")} 

@@ -320,7 +320,7 @@ export const hobbies = [
     title: "Cycling",
     icon: bike, 
     description:
-      "Cycling for me is not for exercise, but a way to explore new places and enjoy nature. I love riding my bike around the city and discovering new parks and trails. It's a great way to clear my mind and experience freedom.",
+      "Im somewhat of a professional cyclist...",
   },
   {
     title: "Teaching",

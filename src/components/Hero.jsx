@@ -24,10 +24,20 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-36 right-72 z-10">
-        <div className="container-bg p-5 rounded-2xl w-[350px] h-[320px] flex justify-center items-center">
-          <img src={me} alt="me" className="w-[420px] h-[290px] object-cover rounded-2xl shadow-2xl" />
+      
+      {/* img section - responsive implementation */}
+      <div className="absolute md:right-20 lg:right-40 xl:right-82 
+                      bottom-10 sm:bottom-20 md:bottom-36
+                      z-10">
+        <div className="container-bg p-3 sm:p-5 rounded-2xl 
+                        w-[300px] sm:w-[350px] md:w-[400px] 
+                        h-[300px] sm:h-[330px] md:h-[370px] 
+                        flex justify-center items-center">
+          <img 
+            src={me} 
+            alt="Haider Malik" 
+            className="w-full h-full object-cover rounded-2xl shadow-2xl" 
+          />
         </div>
       </div>
     </section>

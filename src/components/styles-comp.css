@@ -9,33 +9,29 @@
   
   /* Container-bg */
   .container-bg {
-    --color1: #734652;
-    --color2: #EC7FA9;
-    --color3: #A64D79;
-    width: 90%;
-    height: 90%;
-    background: radial-gradient(
-        circle at top left,
-        var(--color1),
-        transparent 40%
-      ),
-      radial-gradient(circle at bottom right, var(--color2), transparent 40%),
-      linear-gradient(
-        45deg,
-        var(--color3) 25%,
-        transparent 25%,
-        transparent 75%,
-        var(--color3) 75%,
-        var(--color3)
-      );
-    background-size:
-      120px 120px,
-      150px 150px,
-      90px 90px;
-    background-position:
-      0 0,
-      100% 100%,
-      0 0;
+    --s: 50px; /* control the size */
+    --c1: #EC7FA9;
+    --c2: #1E1E1E;
+
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+  background: radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+        100% 100% at 0 100%,
+        #0000,
+        #0008 4%,
+        var(--_g),
+        var(--c1) 96%
+      )
+      var(--c1);
+  background-size: var(--s) var(--s);
     position: relative;
     margin: 50px auto;
     padding: 2rem;
