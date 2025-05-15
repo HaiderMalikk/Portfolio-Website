@@ -77,11 +77,11 @@ const Links = () => {
           <span></span>
           <span></span>
           <span></span>
-          <button onClick={() => copyToClipboard("___haider___")} className="cursor-pointer">
+          <a onClick={() => copyToClipboard("___haider___")} className="cursor-pointer">
             <div className="svg flex justify-center items-center">
               <img src={discord} alt="Discord" className="w-[32px] h-[32px] mb-1" />
             </div>
-          </button>
+          </a>
           <div className="text">Discord</div>
         </li>
       </ul>
