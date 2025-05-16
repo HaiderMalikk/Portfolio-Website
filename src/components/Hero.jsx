@@ -3,7 +3,7 @@ import './styles-comp.css'
 
 import { styles } from "../styles";
 import Links from "./Links";
-import me from '../assets/IMG_me.png'
+import me from '../assets/me.jpg'
 
 const Hero = () => {
   return (
