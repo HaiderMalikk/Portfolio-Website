@@ -23,7 +23,7 @@ const papers = [
     pdfUrl: "https://drive.google.com/file/d/1Rfe7JC4U6kIsE9kh_Iu-_34pu57CLOfH/preview",
   },
   {
-    title: "Enhancing Safety Certification of AI-Driven Autonomous Systemsthrough Explainable AI, Regression Testing, and StandardizedRegulations",
+    title: "Enhancing Safety Certification of AI-Driven Autonomous Systemsthrough Explainable AI, Regression Testing, and Standardized Regulations",
     description: 
     "Artificial intelligence (AI) has transformed operational capabilities and efficiency through itsquick integration into autonomous systems, which span industries like aircraft, healthcare, andtransportation. Nevertheless, this development poses serious difficulties for guaranteeing thesecurity and dependability of these AI-powered systems. For AI applications with probabilisticbehaviours and learning capabilities, traditional certification procedures—which were created fordeterministic systems—are frequently insufficient.",
     authors: "Haider Malik",
@@ -99,11 +99,12 @@ const PaperCard = ({ index, title, description, authors, date, tags, image, pdfU
         className="bg-cardBg p-5 rounded-2xl sm:w-[500px] w-full relative z-10"
       >
         <div>
-          <div className="relative w-full h-[230px]">
+          {/* Change height for mobile and use object-contain instead of object-cover */}
+          <div className="relative w-full h-[180px] sm:h-[230px]">
             <img
               src={image}
               alt={`${title} paper thumbnail`}
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-contain sm:object-cover rounded-2xl"
             />
 
             {/* Adding the buttons at the top-right corner similar to project cards */}

@@ -14,6 +14,7 @@ import {
   Education, 
   Hobbies 
 } from "./components";
+import MobileFixScript from "./components/MobileFixScript";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
           `}
         </script>
       </Helmet>
+      <MobileFixScript />
       <div className='relative z-0 bg-#1A1A1D'>
 
         <div className='relative z-10'>

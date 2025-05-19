@@ -7,6 +7,9 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+// Import the mobile fixes CSS
+import './mobile-fixes.css';
+
 // Define a placeholder image for new projects
 import placeholder from "../assets/placeholder1.png"; // Make sure this file exists or use another image from assets
 import pg1 from "../assets/pg1.png"; // Placeholder image for new projects
@@ -147,21 +150,14 @@ const FeaturedProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.2, 0.75)}>
-      <Tilt
-        options={{
-          max: 25,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-cardBg p-5 rounded-2xl w-full '
-      >
+      <div className='bg-[#EC7FA9] p-5 rounded-2xl w-full shadow-lg mobile-project-card featured-project'>
         <div className='flex flex-col lg:flex-row gap-6'>
-          {/* Image section */}
-          <div className='relative lg:w-1/2 w-full h-[345px]'>
+          {/* Image section - reduced height on mobile */}
+          <div className='relative lg:w-1/2 w-full h-[230px] sm:h-[345px]'>
             <img
               src={image}
               alt={`${name} project thumbnail`}
-              className='w-full h-full object-cover rounded-2xl'
+              className='w-full h-full object-contain sm:object-cover rounded-2xl'
             />
 
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -192,14 +188,14 @@ const FeaturedProjectCard = ({
             </div>
           </div>
 
-          {/* Content section */}
+          {/* Content section - Add specific mobile classes */}
           <div className='lg:w-1/2 w-full flex flex-col justify-between'>
             <div>
-              <h3 className='text-[#F5EFE7] font-bold text-[28px]'>{name}</h3>
-              <p 
-                className='mt-4 text-[#F5EFE7] text-[16px]'
+              <h3 className='text-[#F5EFE7] font-bold text-[28px] mobile-project-title'>{name}</h3>
+              <div 
+                className='mt-4 text-[#F5EFE7] text-[16px] mobile-project-desc'
                 dangerouslySetInnerHTML={{ __html: description }}
-              ></p>
+              ></div>
             </div>
 
             <div className='mt-6 flex flex-wrap gap-2'>
@@ -214,7 +210,7 @@ const FeaturedProjectCard = ({
             </div>
           </div>
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
@@ -230,18 +226,11 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-cardBg p-5 rounded-2xl sm:w-[360px] w-full'
-      >
+      <div className='bg-[#EC7FA9] p-5 rounded-2xl sm:w-[360px] w-full shadow-lg mobile-project-card'>
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
-            alt={`${name} project thumbnail - ${description.substring(0, 50)}...`}
+            alt={`${name} project thumbnail`}
             className='w-full h-full object-cover rounded-2xl'
           />
 
@@ -274,8 +263,8 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-[#F5EFE7] font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-[#F5EFE7] text-[14px]'>{description}</p>
+          <h3 className='text-[#F5EFE7] font-bold text-[24px] mobile-project-title'>{name}</h3>
+          <p className='mt-2 text-[#F5EFE7] text-[14px] mobile-project-desc'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -288,7 +277,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
@@ -296,13 +285,16 @@ const ProjectCard = ({
 const Works = () => {
   const featuredProjects = [featuredProject];
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My Work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+    <div className="bg-transparent mobile-projects-section">
+      {/* Debug element to verify visibility */}
+      <div className="hidden sm:hidden md:hidden lg:hidden mobile-debug-text text-white p-2 bg-red-500 fixed top-0 left-0 z-50">Projects section visible</div>
+      
+      <motion.div variants={textVariant()} className="bg-transparent">
+        <p className={`${styles.sectionSubText} text-[#EC7FA9] mobile-section-subtitle`}>My Work</p>
+        <h2 className={`${styles.sectionHeadText} text-white mobile-section-title`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className='w-full flex bg-transparent'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-[#EC7FA9] text-[17px] max-w-3xl leading-[30px]'
@@ -315,21 +307,21 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {/* Featured Projects */}
+      {/* Featured Projects - with mobile-specific class for targeting with CSS */}
       {featuredProjects.length > 0 && (
-        <div className='mt-20 flex flex-col gap-10'>
+        <div className='mt-0 md:mt-20 flex flex-col gap-10 bg-transparent'>
           {featuredProjects.map((project) => (
             <FeaturedProjectCard key={`featured-${project.name}`} {...project} />
           ))}
         </div>
       )}
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap gap-7 bg-transparent sm:mb-0 mb-40'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

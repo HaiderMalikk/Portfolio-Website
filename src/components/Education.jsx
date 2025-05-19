@@ -8,19 +8,23 @@ import york from '../assets/york.jpg'
 
 const EducationCard = ({ school, degree, date, description, image, index }) => (
   <div className="flex flex-col gap-4">
-    <div className="flex items-center gap-5">
+    {/* Mobile-friendly layout */}
+    <div className="flex flex-col md:flex-row items-center gap-5">
       <img 
         src={york} 
         alt={school}
-        className="w-[150px] h-[150px] rounded-lg object-cover"
+        className="w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-lg object-cover mb-4 md:mb-0"
       />
-      <div>
-        <h3 className="text-[#F5EFE7] font-bold text-[40px]">{school}</h3>
-        <p className="text-[#F5EFE7] text-[30px] font-semibold">{degree}</p>
-        <p className="mt-2 text-[#F5EFE7]  text-[20px]">{date}</p>
+      <div className="text-center md:text-left">
+        <h3 className="text-[#F5EFE7] font-bold text-[26px] md:text-[40px]">{school}</h3>
+        <p className="text-[#F5EFE7] text-[20px] md:text-[30px] font-semibold">{degree}</p>
+        <p className="mt-2 text-[#F5EFE7] text-[16px] md:text-[20px]">{date}</p>
       </div>
     </div>
-    <p className="text-[#F5EFE7] text-[18px]"><strong>Relevant coursework</strong> <br/> {description}</p>
+    {/* Smaller text for mobile */}
+    <p className="text-[#F5EFE7] text-[16px] md:text-[18px]">
+      <strong>Relevant coursework</strong> <br/> {description}
+    </p>
   </div>
 );
 
@@ -30,7 +34,7 @@ const Education = () => {
       school: "York University",
       degree: "Bachelor of Engineering in Software Engineering",
       date: "September 2023 - June 2027",
-      description: "• Intro and Advanced OOP • Data Structures • Computer Organization• Embedded Systems • Software Development Project • Mechatronics Programing",
+      description: "• Intro and Advanced OOP • Data Structures • Computer Organization • Embedded Systems • Software Development Project • Mechatronics Programing",
       image: "/path/to/university-image.jpg", 
     },
   ];

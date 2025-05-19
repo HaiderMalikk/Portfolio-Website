@@ -1,0 +1,86 @@
+/* Mobile visibility fixes specifically for project cards */
+@media (max-width: 768px) {
+  /* Force text visibility */
+  h1, h2, h3, h4, p, span, div {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Ensure project section is visible */
+  #projects {
+    background-color: transparent !important;
+    color: white !important;
+    margin-top: 80px !important; /* Extra space between Tech and Projects sections on mobile */
+    padding-top: 30px !important; /* Additional top padding for Projects section */
+  }
+  
+  /* Force white text on all project cards */
+  div[class*="bg-cardBg"] h3,
+  div[class*="bg-cardBg"] p,
+  div[class*="bg-[#EC7FA9]"] h3,
+  div[class*="bg-[#EC7FA9]"] p {
+    color: #F5EFE7 !important;
+    opacity: 1 !important;
+  }
+  
+  /* Higher contrast for gradient text */
+  .blue-text-gradient,
+  .green-text-gradient,
+  .pink-text-gradient {
+    opacity: 1 !important;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.8);
+  }
+  
+  /* Add a subtle highlight to project cards */
+  div[class*='rounded-2xl'] {
+    box-shadow: 0 0 5px rgba(236, 127, 169, 0.5) !important;
+  }
+  
+  /* Reduce space between project description and featured project */
+  .mobile-projects-section .mt-20:first-of-type {
+    margin-top: 10px !important;
+  }
+
+  /* Adjust position of GitHub button on project images */
+  .card-img_hover {
+    top: auto !important;
+    bottom: 0 !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Image size adjustments for mobile - only for featured project and paper images */
+@media (max-width: 640px) {
+  /* Only target featured project (first project) */
+  .featured-project .relative img {
+    transform: scale(0.85);
+    object-fit: contain !important;
+  }
+  
+  /* Only target paper card images */
+  #papers .relative.w-full img {
+    transform: scale(0.85);
+    object-fit: contain !important;
+  }
+  
+  /* Remove any scaling from regular project cards */
+  .mobile-project-card .relative img {
+    transform: none;
+    object-fit: cover;
+  }
+}
+
+/* Add more space between Tech and Projects sections */
+#tech {
+  margin-bottom: 100px; /* Increased space after tech section */
+}
+
+/* Reduce space between project description and first project */
+.mobile-projects-section .mt-20:first-of-type {
+  margin-top: 10px !important; /* Reduced spacing from description to featured project */
+}
+
+/* Keep normal spacing between projects */
+.mobile-projects-section .mt-20:not(:first-of-type) {
+  margin-top: 5rem !important;
+}

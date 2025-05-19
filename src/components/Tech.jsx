@@ -16,7 +16,7 @@ const Tech = () => {
       </motion.div>
 
       <div 
-        className='mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10'
+        className='mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 md:pb-0'
       >
         {technologies.map((technology) => (
           <div className='w-28 h-28' key={technology.name}>
