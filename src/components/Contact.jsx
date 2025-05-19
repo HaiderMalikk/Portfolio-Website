@@ -22,7 +22,7 @@ const LinkIcon = () => (
     strokeWidth="2" 
     strokeLinecap="round" 
     strokeLinejoin="round" 
-    className="ml-1 text-[#F5EFE7]"
+    className="ml-1 text-[#F5EFE7] md:w-5 md:h-5"
   >
     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
@@ -77,10 +77,10 @@ const Contact = () => {
         <div className="mt-0 flex flex-col gap-4">
           {/* Email contact */}
           <div className="flex items-center gap-3">
-            <div className="flex justify-center items-center w-8 h-8 min-w-[32px] rounded-full bg-textwhite">
-              <img src={mail} alt="Email" className="w-4 h-4" />
+            <div className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 min-w-[32px] md:min-w-[40px] rounded-full bg-textwhite">
+              <img src={mail} alt="Email" className="w-4 h-4 md:w-5 md:h-5" />
             </div>
-            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[14px] sm:text-[16px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
+            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
               haidermalik662@gmail.com
               <LinkIcon />
             </a>
@@ -88,10 +88,10 @@ const Contact = () => {
 
           {/* GitHub contact */}
           <div className="flex items-center gap-3">
-            <div className="flex justify-center items-center w-8 h-8 min-w-[32px] rounded-full bg-textwhite">
-              <img src={github} alt="GitHub" className="w-4 h-4" />
+            <div className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 min-w-[32px] md:min-w-[40px] rounded-full bg-textwhite">
+              <img src={github} alt="GitHub" className="w-4 h-4 md:w-5 md:h-5" />
             </div>
-            <a href="https://github.com/HaiderMalikk" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[14px] sm:text-[16px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
+            <a href="https://github.com/HaiderMalikk" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
               github.com/HaiderMalikk
               <LinkIcon />
             </a>
@@ -99,10 +99,10 @@ const Contact = () => {
 
           {/* LinkedIn contact */}
           <div className="flex items-center gap-3">
-            <div className="flex justify-center items-center w-8 h-8 min-w-[32px] rounded-full bg-[#F5EFE7]">
-              <img src={linkedin} alt="LinkedIn" className="w-4 h-4" />
+            <div className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 min-w-[32px] md:min-w-[40px] rounded-full bg-[#F5EFE7]">
+              <img src={linkedin} alt="LinkedIn" className="w-4 h-4 md:w-5 md:h-5" />
             </div>
-            <a href="https://www.linkedin.com/in/haider-malikk/" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[14px] sm:text-[16px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
+            <a href="https://www.linkedin.com/in/haider-malikk/" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
               linkedin.com/in/haider-malikk
               <LinkIcon />
             </a>
@@ -110,10 +110,10 @@ const Contact = () => {
           
           {/* YouTube contact */}
           <div className="flex items-center gap-3">
-            <div className="flex justify-center items-center w-8 h-8 min-w-[32px] rounded-full bg-[#F5EFE7]">
-              <img src={youtube} alt="YouTube" className="w-4 h-4" />
+            <div className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 min-w-[32px] md:min-w-[40px] rounded-full bg-[#F5EFE7]">
+              <img src={youtube} alt="YouTube" className="w-4 h-4 md:w-5 md:h-5" />
             </div>
-            <a href="https://www.youtube.com/@greenbytecode" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[14px] sm:text-[16px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
+            <a href="https://www.youtube.com/@greenbytecode" target="_blank" rel="noopener noreferrer" className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
               youtube.com/@greenbytecode
               <LinkIcon />
             </a>
@@ -121,12 +121,12 @@ const Contact = () => {
 
           {/* Discord contact - changed to button for better semantics */}
           <div className="flex items-center gap-3">
-            <div className="flex justify-center items-center w-8 h-8 min-w-[32px] rounded-full bg-[#F5EFE7]">
-              <img src={discord} alt="Discord" className="w-5 h-5" />
+            <div className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 min-w-[32px] md:min-w-[40px] rounded-full bg-[#F5EFE7]">
+              <img src={discord} alt="Discord" className="w-5 h-5 md:w-6 md:h-6 mb-[2px]" />
             </div>
             <button 
               onClick={() => copyToClipboard("___haider___")} 
-              className="text-[#F5EFE7] text-[14px] sm:text-[16px] hover:underline hover:text-[#1A1A1D] flex items-center cursor-pointer bg-transparent border-0 p-0"
+              className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center cursor-pointer bg-transparent border-0 p-0"
             >
               ___haider___
               <svg 
@@ -139,7 +139,7 @@ const Contact = () => {
                 strokeWidth="2" 
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
-                className="ml-1 text-[#F5EFE7]"
+                className="ml-1 text-[#F5EFE7] md:w-5 md:h-5"
               >
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>

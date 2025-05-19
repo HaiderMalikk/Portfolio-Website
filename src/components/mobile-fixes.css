@@ -12,7 +12,7 @@
     color: white !important;
     margin-top: 80px !important; /* Extra space between Tech and Projects sections on mobile */
     padding-top: 30px !important; /* Additional top padding for Projects section */
-  }
+  } 
   
   /* Force white text on all project cards */
   div[class*="bg-cardBg"] h3,
@@ -41,12 +41,25 @@
     margin-top: 10px !important;
   }
 
-  /* Remove the bottom positioning that was added previously */
-  /* Keep icons in their original top right position */
-  .card-img_hover {
-    top: 0 !important;
-    bottom: auto !important;
-    margin-top: 10px !important;
+  /* Add padding to the top of icons in featured project only */
+  .featured-project .card-img_hover {
+    padding-top: 15px !important;
+  }
+  
+  /* Make the featured project image rounder on mobile */
+  .featured-project .relative img {
+    border-radius: 24px !important;
+  }
+  
+  /* Adjust section spacing specifically for mobile */
+  #about {
+    padding-top: 50px !important; /* Even smaller on mobile */
+
+  }
+  
+  #tech {
+    padding-top: 30px !important; /* Smaller on mobile */
+    margin-bottom: 0 !important; /* Remove bottom margin on mobile */
   }
 }
 
@@ -71,17 +84,11 @@
   }
 }
 
-/* Add more space between Tech and Projects sections */
+/* Global section spacing adjustments (for both PC and mobile) */
+#about {
+  padding-top: 0 !important; /* Remove extra top padding */
+}
+
 #tech {
-  margin-bottom: 100px; /* Increased space after tech section */
-}
-
-/* Reduce space between project description and first project */
-.mobile-projects-section .mt-20:first-of-type {
-  margin-top: 10px !important; /* Reduced spacing from description to featured project */
-}
-
-/* Keep normal spacing between projects */
-.mobile-projects-section .mt-20:not(:first-of-type) {
-  margin-top: 5rem !important;
+  padding-top: 40px !important; /* Reduced space above Tech section */
 }

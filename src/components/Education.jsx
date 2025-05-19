@@ -43,13 +43,13 @@ const Education = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have learned</p>
-        <h2 className={styles.sectionHeadText}>Education.</h2>
+        <h2 className={`${styles.sectionHeadText} mb-2 sm:mb-0 md:mb-0`}>Education.</h2>
       </motion.div>
 
       <div className="xl:mt-12 flex flex-col gap-10 overflow-hidden">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] bg-cardBg p-8 rounded-2xl"
+          className="flex-[0.75] bg-cardBg p-8 rounded-2xl mt-6 sm:mt-0"
         >
           <div className="mt-2">
             {educationItems.map((education, index) => (

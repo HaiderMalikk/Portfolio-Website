@@ -63,6 +63,18 @@
     .iso-pro {
       margin-bottom: 20px; /* Reduced margin for mobile */
     }
+    
+    /* New styles for text labels on mobile */
+    .text {
+      font-size: 10px !important; /* Smaller font size for mobile */
+      padding: 3px 6px !important; /* Reduced padding */
+      bottom: -26px !important; /* Position closer to icon */
+      width: max-content !important; /* Keep it as narrow as possible */
+      max-width: 80px !important; /* Maximum width to avoid overlap */
+      white-space: nowrap !important; /* Prevent text wrapping */
+      overflow: hidden !important; /* Hide overflow */
+      text-overflow: ellipsis !important; /* Add ellipsis for overflow */
+    }
   }
   
   .text {

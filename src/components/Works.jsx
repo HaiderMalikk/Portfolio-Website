@@ -150,67 +150,75 @@ const FeaturedProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.2, 0.75)}>
-      <div className='bg-[#EC7FA9] p-5 rounded-2xl w-full shadow-lg mobile-project-card featured-project'>
-        <div className='flex flex-col lg:flex-row gap-6'>
-          {/* Image section - reduced height on mobile */}
-          <div className='relative lg:w-1/2 w-full h-[230px] sm:h-[345px]'>
-            <img
-              src={image}
-              alt={`${name} project thumbnail`}
-              className='w-full h-full object-contain sm:object-cover rounded-2xl'
-            />
+      <Tilt
+        options={{
+          max: 15,
+          scale: 1,
+          speed: 450
+        }}
+      >
+        <div className='bg-[#EC7FA9] p-5 rounded-2xl w-full shadow-lg mobile-project-card featured-project'>
+          <div className='flex flex-col lg:flex-row gap-6'>
+            {/* Image section - reduced height on mobile */}
+            <div className='relative lg:w-1/2 w-full h-[230px] sm:h-[345px]'>
+              <img
+                src={image}
+                alt={`${name} project thumbnail`}
+                className='w-full h-full object-contain sm:object-cover rounded-2xl'
+              />
 
-            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-              {/* Live site link button */}
-              {live_site_link && (
+              <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+                {/* Live site link button */}
+                {live_site_link && (
+                  <div
+                    onClick={() => window.open(live_site_link, "_blank")}
+                    className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer mr-2'
+                  >
+                    <img
+                      src={website}
+                      alt='live site'
+                      className='w-1/2 h-1/2 object-contain'
+                    />
+                  </div>
+                )}
+                {/* GitHub repository link button */}
                 <div
-                  onClick={() => window.open(live_site_link, "_blank")}
-                  className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer mr-2'
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
                 >
                   <img
-                    src={website}
-                    alt='live site'
+                    src={github}
+                    alt='source code'
                     className='w-1/2 h-1/2 object-contain'
                   />
                 </div>
-              )}
-              {/* GitHub repository link button */}
-              <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
-              >
-                <img
-                  src={github}
-                  alt='source code'
-                  className='w-1/2 h-1/2 object-contain'
-                />
+              </div>
+            </div>
+
+            {/* Content section - Add specific mobile classes */}
+            <div className='lg:w-1/2 w-full flex flex-col justify-between'>
+              <div>
+                <h3 className='text-[#F5EFE7] font-bold text-[28px] mobile-project-title'>{name}</h3>
+                <div 
+                  className='mt-4 text-[#F5EFE7] text-[16px] mobile-project-desc'
+                  dangerouslySetInnerHTML={{ __html: description }}
+                ></div>
+              </div>
+
+              <div className='mt-6 flex flex-wrap gap-2'>
+                {tags.map((tag) => (
+                  <p
+                    key={`${name}-${tag.name}`}
+                    className={`text-[14px] ${tag.color}`}
+                  >
+                    #{tag.name}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
-
-          {/* Content section - Add specific mobile classes */}
-          <div className='lg:w-1/2 w-full flex flex-col justify-between'>
-            <div>
-              <h3 className='text-[#F5EFE7] font-bold text-[28px] mobile-project-title'>{name}</h3>
-              <div 
-                className='mt-4 text-[#F5EFE7] text-[16px] mobile-project-desc'
-                dangerouslySetInnerHTML={{ __html: description }}
-              ></div>
-            </div>
-
-            <div className='mt-6 flex flex-wrap gap-2'>
-              {tags.map((tag) => (
-                <p
-                  key={`${name}-${tag.name}`}
-                  className={`text-[14px] ${tag.color}`}
-                >
-                  #{tag.name}
-                </p>
-              ))}
-            </div>
-          </div>
         </div>
-      </div>
+      </Tilt>
     </motion.div>
   );
 };
@@ -226,58 +234,66 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className='bg-[#EC7FA9] p-5 rounded-2xl sm:w-[360px] w-full shadow-lg mobile-project-card'>
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt={`${name} project thumbnail`}
-            className='w-full h-full object-cover rounded-2xl'
-          />
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+      >
+        <div className='bg-[#EC7FA9] p-5 rounded-2xl sm:w-[360px] w-full shadow-lg mobile-project-card'>
+          <div className='relative w-full h-[230px]'>
+            <img
+              src={image}
+              alt={`${name} project thumbnail`}
+              className='w-full h-full object-cover rounded-2xl'
+            />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            {/* Live site link button - only render when live_site_link exists */}
-            {live_site_link && (
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              {/* Live site link button - only render when live_site_link exists */}
+              {live_site_link && (
+                <div
+                  onClick={() => window.open(live_site_link, "_blank")}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2'
+                >
+                  <img
+                    src={website}
+                    alt='live site'
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
+              )}
+              {/* GitHub repository link button */}
               <div
-                onClick={() => window.open(live_site_link, "_blank")}
-                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2'
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
                 <img
-                  src={website}
-                  alt='live site'
+                  src={github}
+                  alt='source code'
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
-            )}
-            {/* GitHub repository link button */}
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
             </div>
           </div>
-        </div>
 
-        <div className='mt-5'>
-          <h3 className='text-[#F5EFE7] font-bold text-[24px] mobile-project-title'>{name}</h3>
-          <p className='mt-2 text-[#F5EFE7] text-[14px] mobile-project-desc'>{description}</p>
-        </div>
+          <div className='mt-5'>
+            <h3 className='text-[#F5EFE7] font-bold text-[24px] mobile-project-title'>{name}</h3>
+            <p className='mt-2 text-[#F5EFE7] text-[14px] mobile-project-desc'>{description}</p>
+          </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
-      </div>
+      </Tilt>
     </motion.div>
   );
 };
@@ -285,7 +301,7 @@ const ProjectCard = ({
 const Works = () => {
   const featuredProjects = [featuredProject];
   return (
-    <div className="bg-transparent mobile-projects-section">
+    <div className="bg-transparent mobile-projects-section ">
       {/* Debug element to verify visibility */}
       <div className="hidden sm:hidden md:hidden lg:hidden mobile-debug-text text-white p-2 bg-red-500 fixed top-0 left-0 z-50">Projects section visible</div>
       
