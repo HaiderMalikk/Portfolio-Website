@@ -26,7 +26,7 @@ import website from "../assets/website.png";
 const featuredProject = {
   name: "Proximum AI",
   description: 
-  "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. The goal is to create intelligent systems that can understand and interact with the world in meaningful ways, combining futuristic ideas with AI to make them a reality. The latest addition to this project is the <a href='https://github.com/Proximum-AI/ADA' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>ADA</a> model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
+  "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. The goal is to create intelligent systems that can understand and interact with the world in meaningful ways, combining futuristic ideas with AI to make them a reality. The latest addition to this project is the <a href='https://github.com/Proximum-AI/ADA' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>ADA</a> agent. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
   tags: [
     { name: "Python", color: "green-text-gradient" },
     { name: "Artificial Intelligence", color: "green-text-gradient" },
