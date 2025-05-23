@@ -89,6 +89,20 @@ const Links = () => {
   return (
     <div className="card relative">
       <ul className="flex-row">
+        
+        {/* Email */}
+        <li className="iso-pro">
+          <span></span>
+          <span></span>
+          <span></span>
+          <a href="mailto:haidermalik662@gmail.com">
+            <div className="svg flex justify-center items-center svg-mobile">
+              <img src={mail} alt="Email" className="w-5 h-5 sm:w-7 sm:h-7" />
+            </div>
+          </a>
+          <div className="text">Email</div>
+        </li>
+
         {/* GitHub */}
         <li className="iso-pro">
           <span></span>
@@ -128,18 +142,6 @@ const Links = () => {
           <div className="text">YouTube</div>
         </li>
 
-        {/* Email */}
-        <li className="iso-pro">
-          <span></span>
-          <span></span>
-          <span></span>
-          <a href="mailto:haidermalik662@gmail.com">
-            <div className="svg flex justify-center items-center svg-mobile">
-              <img src={mail} alt="Email" className="w-5 h-5 sm:w-7 sm:h-7" />
-            </div>
-          </a>
-          <div className="text">Email</div>
-        </li>
         
         {/* Discord - Changed to use native alerts on mobile */}
         <li className="iso-pro">
