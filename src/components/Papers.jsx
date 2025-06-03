@@ -20,7 +20,7 @@ const papers = [
       { name: "NLP", color: "pink-text-gradient" },
     ],
     image: paper2, // Using an existing image from your project
-    pdfUrl: "https://drive.google.com/file/d/1Rfe7JC4U6kIsE9kh_Iu-_34pu57CLOfH/preview",
+    pdfUrl: "https://drive.google.com/file/d/1C_0-LcVoGf7Xjw2HtJyq5zyKPWiYOiVX/preview",
   },
   {
     title: "Enhancing Safety Certification of AI-Driven Autonomous Systemsthrough Explainable AI, Regression Testing, and Standardized Regulations",
