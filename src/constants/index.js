@@ -158,7 +158,17 @@ const technologies = [
 ];
 
 const experiences = [
-  
+  {
+    title: "Full Stack Developer Co-op",
+    company_name: "Royal Bank of Canada",
+    icon: work2, 
+    iconBg: "#EC7FA9",
+    date: "September 2025 - April 2026",
+    points: [
+      "Working in the Technology and Operations RIG Team. RIG is short for RBC Interface Guidlines and it's RBC core design system used internaly by many teams across RBC.", 
+      "At RBC i will be working with React, Angular and Typescript to build and maintain reusable components, RIG's AI Agent and other tools to help developers and designers.",
+    ],
+  },
   {
     title: "AI/ML Engineer Intern",
     company_name: "CAPRiser Advisory",
