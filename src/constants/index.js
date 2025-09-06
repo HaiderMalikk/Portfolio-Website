@@ -43,6 +43,7 @@ import backendicon from '../assets/backend.svg'
 import book from '../assets/book.svg'
 import bike from '../assets/bike.svg'
 import teach from '../assets/teach.svg'
+import work2 from "../assets/company/work2.png"; // Make sure this path is correct
 
 export const navLinks = [
   {
