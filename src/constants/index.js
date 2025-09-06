@@ -28,12 +28,14 @@ import python from "../assets/tech/python.png"
 import java from "../assets/tech/java.png"
 import next from "../assets/tech/next.webp"
 import c from "../assets/tech/C.png"
-import cpp from "../assets/tech/Cpp.png"
+import js from "../assets/tech/js.png"
 import pytorch from "../assets/tech/pytorch.png"
 import tf from "../assets/tech/tf.png"
-import sql from "../assets/tech/sql.png"
+import sql from "../assets/tech/sql.webp"
 import opencv from "../assets/tech/opencv.svg"
 import aws from "../assets/tech/aws.png"
+import react from "../assets/tech/reactjs.png"
+import scikit from "../assets/tech/scikit.png"
 import aiicon from '../assets/ai.svg'
 import webicon from '../assets/globe.svg'
 import dataicon from '../assets/data.svg'
@@ -106,24 +108,24 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "c",
-    icon: c,
+    name: "JavaScript",
+    icon: js,
   },
   {
-    name: "Cpp",
-    icon: cpp,
+    name: "c",
+    icon: c,
   },
   {
     name: "Nextjs",
     icon: next,
   },
   {
-    name: "css",
-    icon: css,
+    name: "react",
+    icon: react,
   },
   {
-    name: "tailwind",
-    icon: tailwind,
+    name: "scikit",
+    icon: scikit,
   },
   {
     name: "tf",
@@ -156,6 +158,7 @@ const technologies = [
 ];
 
 const experiences = [
+  
   {
     title: "AI/ML Engineer Intern",
     company_name: "CAPRiser Advisory",
@@ -326,7 +329,7 @@ export const hobbies = [
     title: "Teaching",
     icon: teach, 
     description:
-    "Before I started my university journey, I spent about 1 year in the education field where i worked as a program assistant in 3 different kids camps. Now, i enjoy making educational content on my YouTube channel and sharing my knowledge with others. I believe that teaching is a great way to reinforce my own understanding of the material and help others learn.",
+    "Before I started my university journey, I spent about 1 year in the education field where i worked as a program assistant in 3 different kids camps, you can learn more about that on my LinkedIn. Now, i enjoy making educational content on my YouTube channel and sharing my knowledge with others. I believe that teaching is a great way to reinforce my own understanding of the material and help others learn.",
   },
 ];
 
