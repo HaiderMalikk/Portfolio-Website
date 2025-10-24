@@ -7,6 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { github } from "../assets"; // Importing the github icon for reference
 import paper1 from '../assets/paper1.png';
 import paper2 from '../assets/paper2.png';
+import paper3 from '../assets/paper3.png';
 
 const papers = [
   {
@@ -35,6 +36,22 @@ const papers = [
     ],
     image: paper1, // Using an existing image from your project
     pdfUrl: "https://drive.google.com/file/d/1wLUPWPMxPZWVOqfXA9AEQhP8St7H26-q/preview",
+  },
+    {
+    title: "My AI Notes (Paper Form)",
+    description: 
+    "⚠️ Disclaimer: This is not a research paper, but rather my comprehensive AI notes which include research I did for many, many topics all in one place! These notes represent my learning through many many months, almost everything I know in the field of Artificial Intelligence. I truly love them because they capture how much I've grown and learned. Whenever I forget something or need a refresher, these notes are where I go back to. They reflect my journey, my curiosity, and my understanding of AI written, refined, and revisited countless times. Take a look at them, there might be a topic you like!\n\n📘 How to use: Click on the PDF icon to open the github repo then open the index pages to browse topics. Each topic links to a corresponding page, and every page has a matching PDF with the same number in its name for easy reference and reading. Some topics have code examples, If you want to see code examples for that topic see if it exists under ",
+    authors: "Haider Malik",
+    date: "2025",
+    tags: [
+      { name: "AI Notes", color: "blue-text-gradient" },
+      { name: "ML Notes", color: "green-text-gradient" },
+      { name: "Learning", color: "pink-text-gradient" },
+    ],
+    image: paper3, // Using an existing image from your project
+    pdfUrl: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/AI/AI_Notes",
+    externalLink: true, // Flag to open in new tab instead of modal
+    allAINotesLink: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/AI", // Link for "All AI Notes"
   }
 ];
 
@@ -80,12 +97,20 @@ const PDFViewerModal = ({ pdfUrl, title, onClose }) => {
   );
 };
 
-const PaperCard = ({ index, title, description, authors, date, tags, image, pdfUrl, externalLink }) => {
+const PaperCard = ({ index, title, description, authors, date, tags, image, pdfUrl, externalLink, allAINotesLink }) => {
   const [isPDFModalOpen, setIsPDFModalOpen] = useState(false);
   
   // PDF icon (using a placeholder - you can replace with your own icon)
   const pdfIcon = "https://cdn-icons-png.flaticon.com/512/337/337946.png";
   
+  // Handle PDF icon click - either open in new tab or modal
+  const handlePDFClick = () => {
+    if (externalLink) {
+      window.open(pdfUrl, '_blank');
+    } else {
+      setIsPDFModalOpen(true);
+    }
+  };
 
   return (
     <>
@@ -111,7 +136,7 @@ const PaperCard = ({ index, title, description, authors, date, tags, image, pdfU
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               {/* PDF Viewer button */}
               <div
-                onClick={() => setIsPDFModalOpen(true)}
+                onClick={handlePDFClick}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2'
               >
                 <img
@@ -126,7 +151,19 @@ const PaperCard = ({ index, title, description, authors, date, tags, image, pdfU
           {/* Reduced spacing for card content */}
           <div className="mt-4">
             <h3 className="text-[#F5EFE7] font-bold text-[24px] leading-tight">{title}</h3>
-            <p className="mt-4 text-[#F5EFE7] text-[14px]">{description}</p>
+            <p className="mt-4 text-[#F5EFE7] text-[14px] whitespace-pre-line">
+              {description}
+              {allAINotesLink && (
+                <a 
+                  href={allAINotesLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-600 underline ml-1 font-bold"
+                >
+                  All AI Notes
+                </a>
+              )}
+            </p>
           </div>
 
           {/* Tags with minimal spacing */}
