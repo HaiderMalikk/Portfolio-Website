@@ -64,10 +64,8 @@ const projects = [
     tags: [
       { name: "Next.js", color: "blue-text-gradient" },
       { name: "Flask", color: "blue-text-gradient" },
-      { name: "SpringBoot", color: "blue-text-gradient" },
       { name: "TypeScript", color: "green-text-gradient" },
       { name: "Python", color: "green-text-gradient" },
-      { name: "Java", color: "green-text-gradient" },
       { name: "OpenAI", color: "pink-text-gradient" },
       { name: "tailwind", color: "pink-text-gradient" },
       { name: "SQL", color: "pink-text-gradient" },

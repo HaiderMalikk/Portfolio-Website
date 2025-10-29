@@ -26,6 +26,8 @@ const experiences = [
     points: [
       "Working in the Technology and Operations RIG Team. RIG is short for RBC Interface Guidlines and it's RBC core design system used internaly by many teams across RBC.", 
       "At RBC i will be working with React, Angular and Typescript to build and maintain reusable components, RIG's AI Agent/ MCP server and other tools to help developers and designers.",
+      "Used CI/CD tools like Jenkins and GitHub Actions to automate the build and deployment process.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
     ],
   },
   {

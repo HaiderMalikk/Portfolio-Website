@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#F5EFE7]`}>
             Software Engineering Student <br/>
-            AI Engineer & Full-Stack Developer
+            ML Engineer & Full-Stack Developer
           </p>
           
           {/* Links section - centered on mobile, left-aligned on desktop */}
