@@ -18,7 +18,7 @@ module.exports = {
         textwhite: '#F5EFE7',
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #3B1C32",
+        //card: "0px 35px 120px -15px #3B1C32",
       },
       screens: {
         xs: "450px",
