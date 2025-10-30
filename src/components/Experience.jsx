@@ -21,7 +21,7 @@ const experiences = [
     title: "Full Stack Developer Co-op",
     company_name: "Royal Bank of Canada",
     icon: work2, 
-    iconBg: "#EC7FA9",
+    iconBg: "#548CA8",
     date: "September 2025 - April 2026",
     points: [
       "Working in the Technology and Operations RIG Team. RIG is short for RBC Interface Guidlines and it's RBC core design system used internaly by many teams across RBC.", 
@@ -34,7 +34,7 @@ const experiences = [
     title: "AI/ML Engineer Intern",
     company_name: "CAPRiser Advisory",
     icon: work,
-    iconBg: "#EC7FA9",
+    iconBg: "#548CA8",
     date: "March 2025 - June 2025",
     points: [
       "Built an AI-powered financial analysis system to evaluate market trends and investment opportunities.",
@@ -51,10 +51,10 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#EC7FA9",
+        background: "#548CA8",
         color: "#F5EFE7",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #EC7FA9" }}
+      contentArrowStyle={{ borderRight: "7px solid  #548CA8" }}
       date={experience.date}
       iconStyle={{ 
         background: experience.iconBg,

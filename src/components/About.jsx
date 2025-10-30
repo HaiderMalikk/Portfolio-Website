@@ -46,10 +46,10 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-[#EC7FA9] text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-[#548CA8] text-[17px] max-w-3xl leading-[30px]'
       >
         <span className="inline-flex items-center gap-2 mb-2">
-          <FaMapMarkerAlt className="text-[#EC7FA9] text-xl" />
+          <FaMapMarkerAlt className="text-[#548CA8] text-xl" />
           <span className="text-[#F5EFE7] font-medium">Toronto, Canada</span>
         </span>
         <br />

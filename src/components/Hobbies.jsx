@@ -51,7 +51,7 @@ const Hobbies = () => {
       <div className='mt-0 w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-[#EC7FA9] text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-[#548CA8] text-[17px] max-w-3xl leading-[30px]'
         >
         When I'm Not Coding or Studying, I Enjoy Spending My Time On These Activities That Help Me Stay Balanced And Creative.
         </motion.p>

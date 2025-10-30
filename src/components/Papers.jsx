@@ -213,7 +213,7 @@ const Papers = () => {
         <div className="w-full flex">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className="mt-3 text-[#EC7FA9] text-[17px] max-w-3xl leading-[30px]"
+            className="mt-3 text-[#548CA8] text-[17px] max-w-3xl leading-[30px]"
           >
             The following papers represent my personal and academic research contributions. Each paper explores topics I'm passionate about, showcasing my analytical skills and technical knowledge. Although im still learning how to write good papers, I hope you find them interesting. Click on the PDF icon to read the full paper right here.
           </motion.p>

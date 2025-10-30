@@ -17,8 +17,8 @@
   /* Force white text on all project cards */
   div[class*="bg-cardBg"] h3,
   div[class*="bg-cardBg"] p,
-  div[class*="bg-[#EC7FA9]"] h3,
-  div[class*="bg-[#EC7FA9]"] p {
+  div[class*="bg-[#548CA8]"] h3,
+  div[class*="bg-[#548CA8]"] p {
     color: #F5EFE7 !important;
     opacity: 1 !important;
   }

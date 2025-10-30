@@ -13,7 +13,7 @@ const Hero = () => {
       >
         <div className="w-full flex flex-col items-start md:items-start">
           <h1 className={`${styles.heroHeadText} text-[#F5EFE7]`}>
-            Hi, I'm <span className='text-[#EC7FA9]'>Haider</span>
+            Hi, I'm <span className='text-[#548CA8]'>Haider</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#F5EFE7]`}>
             Software Engineering Student <br/>

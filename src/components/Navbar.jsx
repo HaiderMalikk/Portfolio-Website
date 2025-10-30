@@ -225,7 +225,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-[#EC7FA9]" : "text-[#F5EFE7]"
+                active === nav.title ? "text-[#548CA8]" : "text-[#F5EFE7]"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={(e) => {
                 e.preventDefault();
@@ -266,7 +266,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-[#F5EFE7]" : "text-[#EC7FA9]"
+                    active === nav.title ? "text-[#F5EFE7]" : "text-[#548CA8]"
                   }`}
                   onClick={(e) => {
                     e.preventDefault();

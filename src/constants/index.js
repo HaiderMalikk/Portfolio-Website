@@ -163,7 +163,7 @@ const experiences = [
     title: "Full Stack Developer Co-op",
     company_name: "Royal Bank of Canada",
     icon: work2, 
-    iconBg: "#EC7FA9",
+    iconBg: "#548CA8",
     date: "September 2025 - April 2026",
     points: [
       "Working in the Technology and Operations RIG Team. RIG is short for RBC Interface Guidlines and it's RBC core design system used internaly by many teams across RBC.", 
@@ -173,7 +173,7 @@ const experiences = [
   {
     title: "AI/ML Engineer Intern",
     company_name: "CAPRiser Advisory",
-    iconBg: "#EC7FA9",
+    iconBg: "#548CA8",
     date: "March 2025 - June 2025",
     points: [
       "Built an AI-powered financial analysis system to evaluate market trends and investment opportunities.",

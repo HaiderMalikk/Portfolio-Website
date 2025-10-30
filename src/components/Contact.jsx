@@ -80,7 +80,7 @@ const Contact = () => {
             <div className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 min-w-[32px] md:min-w-[40px] rounded-full bg-textwhite">
               <img src={mail} alt="Email" className="w-4 h-4 md:w-5 md:h-5" />
             </div>
-            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1A1A1D] flex items-center truncate">
+            <a href="mailto:haidermalik662@gmail.com" className="text-[#F5EFE7] text-[14px] sm:text-[16px] md:text-[18px] hover:underline hover:text-[#1E1E1E] flex items-center truncate">
               haidermalik662@gmail.com
               <LinkIcon />
             </a>

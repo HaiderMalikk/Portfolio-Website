@@ -155,7 +155,7 @@ const FeaturedProjectCard = ({
           speed: 450
         }}
       >
-        <div className='bg-[#EC7FA9] p-5 rounded-2xl w-full shadow-lg mobile-project-card featured-project'>
+        <div className='bg-[#548CA8] p-5 rounded-2xl w-full shadow-lg mobile-project-card featured-project'>
           <div className='flex flex-col lg:flex-row gap-6'>
             {/* Image section - reduced height on mobile */}
             <div className='relative lg:w-1/2 w-full h-[230px] sm:h-[345px]'>
@@ -239,7 +239,7 @@ const ProjectCard = ({
           speed: 450,
         }}
       >
-        <div className='bg-[#EC7FA9] p-5 rounded-2xl sm:w-[360px] w-full shadow-lg mobile-project-card'>
+        <div className='bg-[#548CA8] p-5 rounded-2xl sm:w-[360px] w-full shadow-lg mobile-project-card'>
           <div className='relative w-full h-[230px]'>
             <img
               src={image}
@@ -304,14 +304,14 @@ const Works = () => {
       <div className="hidden sm:hidden md:hidden lg:hidden mobile-debug-text text-white p-2 bg-red-500 fixed top-0 left-0 z-50">Projects section visible</div>
       
       <motion.div variants={textVariant()} className="bg-transparent">
-        <p className={`${styles.sectionSubText} text-[#EC7FA9] mobile-section-subtitle`}>My Work</p>
+        <p className={`${styles.sectionSubText} text-[#548CA8] mobile-section-subtitle`}>My Work</p>
         <h2 className={`${styles.sectionHeadText} text-white mobile-section-title`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex bg-transparent'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-[#EC7FA9] text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-[#548CA8] text-[17px] max-w-3xl leading-[30px]'
         >
           The Following Projects Showcase My Skills And Experience Through
           Real-World Examples Of My Work. Each Project Is Briefly Described With
