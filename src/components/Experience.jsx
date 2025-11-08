@@ -35,7 +35,7 @@ const experiences = [
     company_name: "CAPRiser Advisory",
     icon: work,
     iconBg: "#548CA8",
-    date: "March 2025 - June 2025",
+    date: "April 2025 - June 2025",
     points: [
       "Built an AI-powered financial analysis system to evaluate market trends and investment opportunities.",
       "Integrated real-time financial data APIs (e.g., Yahoo Finance) for key indicators like RSI, moving averages, and volatility.",
