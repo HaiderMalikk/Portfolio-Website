@@ -44,9 +44,9 @@ const papers = [
     authors: "Haider Malik",
     date: "2025",
     tags: [
-      { name: "AI Notes", color: "blue-text-gradient" },
-      { name: "ML Notes", color: "green-text-gradient" },
-      { name: "Learning", color: "pink-text-gradient" },
+      { name: "ML", color: "green-text-gradient" },
+      { name: "Notes", color: "blue-text-gradient" },
+      { name: "Code Examples", color: "pink-text-gradient" },
     ],
     image: paper3, // Using an existing image from your project
     pdfUrl: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/Machine_Learning/ML_Notes",
@@ -160,7 +160,7 @@ const PaperCard = ({ index, title, description, authors, date, tags, image, pdfU
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-600 underline ml-1 font-bold"
                 >
-                  All AI Notes
+                  All ML Notes
                 </a>
               )}
             </p>
