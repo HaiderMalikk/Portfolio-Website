@@ -49,9 +49,9 @@ const papers = [
       { name: "Learning", color: "pink-text-gradient" },
     ],
     image: paper3, // Using an existing image from your project
-    pdfUrl: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/AI/AI_Notes",
+    pdfUrl: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/Machine_Learning/ML_Notes",
     externalLink: true, // Flag to open in new tab instead of modal
-    allAINotesLink: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/AI", // Link for "All AI Notes"
+    allAINotesLink: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/Machine_Learning", 
   }
 ];
 
