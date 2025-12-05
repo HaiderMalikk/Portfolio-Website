@@ -38,9 +38,9 @@ const papers = [
     pdfUrl: "https://drive.google.com/file/d/1wLUPWPMxPZWVOqfXA9AEQhP8St7H26-q/preview",
   },
     {
-    title: "My AI Notes (Paper Form)",
+    title: "My ML Notes (Paper Form)",
     description: 
-    "⚠️ Disclaimer: This is not a research paper, but rather my comprehensive AI notes which include research I did for many, many topics all in one place! These notes represent my learning through many many months, almost everything I know in the field of Artificial Intelligence. I truly love them because they capture how much I've grown and learned. Whenever I forget something or need a refresher, these notes are where I go back to. They reflect my journey, my curiosity, and my understanding of AI written, refined, and revisited countless times. Take a look at them, there might be a topic you like!\n\n📘 How to use: Click on the PDF icon to open the github repo then open the index pages to browse topics. Each topic links to a corresponding page, and every page has a matching PDF with the same number in its name for easy reference and reading. Some topics have code examples, If you want to see code examples for that topic see if it exists under ",
+    "⚠️ Disclaimer: This is not a research paper, but rather my comprehensive ML notes which include research I did for many, many topics all in one place! These notes represent my learning through many many months, almost everything I know in the field of Machine Learning. I truly love them because they capture how much I've grown and learned. Whenever I forget something or need a refresher, these notes are where I go back to. They reflect my journey, my curiosity, and my understanding of ML written, refined, and revisited countless times. Take a look at them, there might be a topic you like!\n\n📘 How to use: Click on the PDF icon to open the github repo then open the index pages to browse topics. Each topic links to a corresponding page, and every page has a matching PDF with the same number in its name for easy reference and reading. Some topics have code examples, If you want to see code examples for that topic see if it exists under ",
     authors: "Haider Malik",
     date: "2025",
     tags: [
