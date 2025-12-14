@@ -25,7 +25,6 @@ import {
   threejs,
 } from "../assets";
 import python from "../assets/tech/python.png"
-import java from "../assets/tech/java.png"
 import next from "../assets/tech/next.webp"
 import c from "../assets/tech/C.png"
 import js from "../assets/tech/js.png"
@@ -36,6 +35,9 @@ import opencv from "../assets/tech/opencv.svg"
 import aws from "../assets/tech/aws.png"
 import react from "../assets/tech/reactjs.png"
 import scikit from "../assets/tech/scikit.png"
+import keras from "../assets/tech/keras.png"
+import gcp from "../assets/tech/gcp.png"
+import flask from "../assets/tech/flask.webp"
 import aiicon from '../assets/ai.svg'
 import webicon from '../assets/globe.svg'
 import dataicon from '../assets/data.svg'
@@ -101,60 +103,60 @@ const technologies = [
     icon: python,
   },
   {
-    name: "Java",
-    icon: java,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
-  },
-  {
-    name: "JavaScript",
-    icon: js,
   },
   {
     name: "c",
     icon: c,
   },
   {
-    name: "Nextjs",
-    icon: next,
-  },
-  {
     name: "react",
     icon: react,
   },
   {
-    name: "scikit",
-    icon: scikit,
+    name: "flask",
+    icon: flask,
   },
   {
     name: "tf",
     icon: tf,
   },
   {
+    name: "keras",
+    icon: keras,
+  },
+  {
     name: "pyt",
     icon: pytorch,
+  },
+  {
+    name: "scikit",
+    icon: scikit,
   },
   {
     name: "cv",
     icon: opencv,
   },
   {
-    name: "sql",
-    icon: sql,
+    name: "aws",
+    icon: aws,
   },
   {
-    name: "dkr",
-    icon: docker,
+    name: "gcp",
+    icon: gcp,
+  },
+  {
+    name: "sql",
+    icon: sql,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "aws",
-    icon: aws,
+    name: "dkr",
+    icon: docker,
   },
 ];
 
@@ -328,7 +330,7 @@ export const hobbies = [
     title: "Reading",
     icon: book, 
     description:
-      "I enjoy reading books on technology, science and Engineering. Reading expands my knowledge and inspires me to learn new things. One of my favorite books is 'Applied Pattern Recognition in C++' by Andrew Hunt and Paulus, Dietrich W. R which has greatly influenced me in my field.",
+      "I enjoy reading books on technology, science and Engineering. Reading expands my knowledge and inspires me to learn new things.",
   },
   {
     title: "Cycling",
