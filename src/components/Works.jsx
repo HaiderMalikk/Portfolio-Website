@@ -89,7 +89,7 @@ const projects = [
       { name: "Intelligent Systems", color: "pink-text-gradient" },
   ],
   image: fp1, // Use an appropriate image from your imports
-  source_code_link: "https://github.com/Proximum-AI",
+  source_code_link: "https://github.com/HaiderMalikk/ADA",
   },
   // Add the new projects
   {

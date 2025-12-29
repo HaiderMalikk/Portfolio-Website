@@ -191,32 +191,36 @@ const experiences = [
 
 const projects = [
   {
-    name: "Reddish Trends",
-    description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
-    tags: [
-      { name: "Next.js", color: "blue-text-gradient" },
-      { name: "Flask", color: "blue-text-gradient" },
-      { name: "TypeScript", color: "green-text-gradient" },
-      { name: "Python", color: "green-text-gradient" },
-      { name: "tailwind", color: "pink-text-gradient" },
-      { name: "OpenAI", color: "pink-text-gradient" },
-      { name: "Firebase", color: "pink-text-gradient" },
-    ],
-    source_code_link: "https://github.com/HaiderMalikk/Reddish-Trends",
-    live_site_link: "https://www.reddishtrends.com", // This project has a website link
+     name: "Reddish Trends",
+  description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
+  tags: [
+    { name: "Next.js", color: "blue-text-gradient" },
+    { name: "Flask", color: "blue-text-gradient" },
+    { name: "TypeScript", color: "green-text-gradient" },
+    { name: "Python", color: "green-text-gradient" },
+    { name: "tailwind", color: "pink-text-gradient" },
+    { name: "OpenAI", color: "pink-text-gradient" },
+    { name: "Firebase", color: "pink-text-gradient" },
+  ],
+  // image: pg1,
+  source_code_link: "https://github.com/HaiderMalikk/Reddish-Trends",
+  live_site_link: "https://www.reddishtrends.com", // This project has a website link
+  featured: true // Add this property to identify featured projects
   },
   {
-    name: "Proximum AI",
-    description: "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the ADA model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
+    name: "Reddit Jams",
+    description: "RedditJams is an intelligent music recommendation system that analyzes your Spotify playlist, searches Reddit's music community for similar tastes, and uses GPT-4 to generate personalized song recommendations.",
     tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "FastAPI", color: "blue-text-gradient" },
       { name: "Python", color: "green-text-gradient" },
-      { name: "Sqlite", color: "green-text-gradient" },
-      { name: "AI/ML", color: "green-text-gradient" },
-      { name: "Computer Vision", color: "pink-text-gradient" },
-      { name: "AI Agents", color: "pink-text-gradient" },
-      { name: "OpenAI API", color: "pink-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" },
     ],
-    source_code_link: "https://github.com/Proximum-AI",
+    // image: pg5,
+    source_code_link: "https://github.com/HaiderMalikk/RedditJams",
+    live_site_link: "https://redditjams.com", // This project has a website link
   },
   {
     name: "Mood Atlas",
@@ -224,33 +228,31 @@ const projects = [
     tags: [
       { name: "Next.js", color: "blue-text-gradient" },
       { name: "Flask", color: "blue-text-gradient" },
-      { name: "SpringBoot", color: "blue-text-gradient" },
       { name: "TypeScript", color: "green-text-gradient" },
       { name: "Python", color: "green-text-gradient" },
-      { name: "Java", color: "green-text-gradient" },
       { name: "OpenAI", color: "pink-text-gradient" },
       { name: "tailwind", color: "pink-text-gradient" },
       { name: "SQL", color: "pink-text-gradient" },
     ],
+    // image: pg2,
     source_code_link: "https://github.com/HaiderMalikk/Mood-Atlas",
     live_site_link: "https://mood-atlas.vercel.app", // This project has a website link
   },
   // The rest of the projects have only GitHub links (no live_site_link property)
   {
-    name: "Neural Network Circuit Optimizer",
-    description: "The Neural Network Circuit Optimizer, built on my custom digital circuit simulator, uses AI and machine learning to optimize simple digital circuits.",
+    name: "ADA",
+    description: 
+    "ADA (Advanced Digital Agent) is aimed to be a JARVIS like AI that can answer question like siri but with the context of the world around you, and you as the admin controling every move of this Agent.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
-      { name: "C++", color: "green-text-gradient" },
-      { name: "Tensorflow", color: "blue-text-gradient" },
-      { name: "PyTorch", color: "blue-text-gradient" },
-      { name: "Pandas", color: "blue-text-gradient" },
-      { name: "Neural Networks", color: "pink-text-gradient" },
-      { name: "Machine Learning", color: "pink-text-gradient" },
-      { name: "AI", color: "pink-text-gradient" },
-      { name: "SQL", color: "pink-text-gradient" },
-    ],
-    source_code_link: "https://github.com/HaiderMalikk/Neural-Network-Circuit-Optimizer",
+      { name: "Artificial Intelligence", color: "green-text-gradient" },
+      { name: "Machine Learning", color: "green-text-gradient" },
+      { name: "Computer Vision", color: "pink-text-gradient" },
+      { name: "AI Agents", color: "pink-text-gradient" },
+      { name: "Intelligent Systems", color: "pink-text-gradient" },
+  ],
+  // image: fp1, // Use an appropriate image from your imports
+  source_code_link: "https://github.com/Proximum-AI",
   },
   // Add the new projects
   {
@@ -264,34 +266,23 @@ const projects = [
       { name: "CSS", color: "green-text-gradient" },
       { name: "Firebase", color: "pink-text-gradient" },
     ],
+    // image: pg4,
     source_code_link: "https://github.com/HaiderMalikk/Supa-Charger-App",
-  },
-  {
-    name: "Smart Paper Summarizer",
-    description:
-      "Smart Paper Summarizer is an AI tool that summarizes educational papers. It uses PyPDF to extract text, OpenAI’s Ada for text embeddings, and Chroma to store and query these embeddings. The context is then passed to GPT-4 mini, which generates concise and accurate summaries.",
-    tags: [
-      { name: "Streamlit", color: "blue-text-gradient" },
-      { name: "Python", color: "green-text-gradient" },
-      { name: "OpenAI", color: "pink-text-gradient" },
-      { name: "Chroma", color: "pink-text-gradient" },
-      { name: "Pandas", color: "pink-text-gradient" },
-    ],
-    source_code_link: "https://github.com/HaiderMalikk/Smart-Paper-Summarizer",
   },
   {
     name: "Chess Engine and Smart Bot",
     description:
       "My Chess Game Made with Pygame. The game includes a chess game engine, chess bot and its smart move finder. The game can be played with another person or a Chess bot powered by powerful algorithms and data. ELO: 1200",
     tags: [
-      { name: "Python", color: "green-text-gradient" },
       { name: "Pygame", color: "blue-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
       { name: "AI", color: "pink-text-gradient" },
       { name: "Chess", color: "pink-text-gradient" },
       { name: "Algorithms", color: "pink-text-gradient" },
     ],
+    // image: pg6,
     source_code_link: "https://github.com/HaiderMalikk/Chess",
-  },
+  }
 ];
 
 // Make sure this papers array is properly defined 
@@ -322,6 +313,22 @@ export const papers = [
     ],
     image: "/src/assets/paper1.png", // Using an existing image from your project
     pdfUrl: "https://drive.google.com/file/d/1wLUPWPMxPZWVOqfXA9AEQhP8St7H26-q/preview",
+  },
+  {
+    title: "My ML Notes (Paper Form)",
+    description: 
+    "⚠️ Disclaimer: This is not a research paper, but rather my comprehensive ML notes which include research I did for many, many topics all in one place! These notes represent my learning through many many months, almost everything I know in the field of Machine Learning. I truly love them because they capture how much I've grown and learned. Whenever I forget something or need a refresher, these notes are where I go back to. They reflect my journey, my curiosity, and my understanding of ML written, refined, and revisited countless times. Take a look at them, there might be a topic you like!\n\n📘 How to use: Click on the PDF icon to open the github repo then open the index pages to browse topics. Each topic links to a corresponding page, and every page has a matching PDF with the same number in its name for easy reference and reading. Some topics have code examples, If you want to see code examples for that topic see if it exists under ",
+    authors: "Haider Malik",
+    date: "2025",
+    tags: [
+      { name: "ML", color: "green-text-gradient" },
+      { name: "Notes", color: "blue-text-gradient" },
+      { name: "Code Examples", color: "pink-text-gradient" },
+    ],
+    // image: paper3, // Using an existing image from your project
+    pdfUrl: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/Machine_Learning/ML_Notes",
+    externalLink: true, // Flag to open in new tab instead of modal
+    allAINotesLink: "https://github.com/HaiderMalikk/CS_NOTES/tree/main/Machine_Learning", 
   }
 ];
 

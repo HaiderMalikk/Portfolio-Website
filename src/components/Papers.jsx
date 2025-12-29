@@ -120,16 +120,14 @@ const PaperCard = ({ index, title, description, authors, date, tags, image, pdfU
           scale: 1,
           speed: 450,
         }}
-        // Increased width from sm:w-[360px] to sm:w-[500px] to make cards wider
-        className="bg-cardBg p-5 rounded-2xl sm:w-[500px] w-full relative z-10"
+        className="bg-cardBg p-5 rounded-2xl sm:w-[360px] w-full relative z-10"
       >
         <div>
-          {/* Change height for mobile and use object-contain instead of object-cover */}
-          <div className="relative w-full h-[180px] sm:h-[230px]">
+          <div className="relative w-full h-[230px]">
             <img
               src={image}
               alt={`${title} paper thumbnail`}
-              className="w-full h-full object-contain sm:object-cover rounded-2xl"
+              className="w-full h-[230px] rounded-2xl"
             />
 
             {/* Adding the buttons at the top-right corner similar to project cards */}
@@ -221,7 +219,7 @@ const Papers = () => {
   
         {/* Fixed animation by removing index reference */}
         <motion.div variants={fadeIn("up", "spring", 0.2, 0.75)}>
-          <div className="mt-20 flex flex-wrap gap-16 justify-center relative z-10 px-4">
+          <div className="mt-20 flex flex-wrap gap-7 relative z-10">
             {papers && papers.length > 0 ? (
               papers.map((paper, index) => (
                 <PaperCard 
