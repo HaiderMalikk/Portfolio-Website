@@ -18,45 +18,46 @@ import pg3 from "../assets/pg3.png"; // Placeholder image for new projects
 import pg4 from "../assets/pg4.png"; // Placeholder image for new projects
 import pg5 from "../assets/pg5.png"; // Placeholder image for new projects
 import pg6 from "../assets/pg6.png"; // Placeholder image for new projects
-import fp1 from "../assets/proximum.png"; // Placeholder image for new projects
+import fp1 from "../assets/ada.png"; // Placeholder image for new projects
 // Import website icon
 import website from "../assets/website.png"; 
 
 // Add this to your projects array in Works.jsx
-const featuredProject = {
-  name: "Proximum AI",
-  description: 
-  "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. The goal is to create intelligent systems that can understand and interact with the world in meaningful ways, combining futuristic ideas with AI to make them a reality. The latest addition to this project is the <a href='https://github.com/Proximum-AI/ADA' target='_blank' rel='noopener noreferrer' class='text-blue-400 hover:underline'>ADA</a> agent. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
-  tags: [
-    { name: "Python", color: "green-text-gradient" },
-    { name: "Artificial Intelligence", color: "green-text-gradient" },
-    { name: "Machine Learning", color: "green-text-gradient" },
-    { name: "Computer Vision", color: "pink-text-gradient" },
-    { name: "AI Agents", color: "pink-text-gradient" },
-    { name: "Intelligent Systems", color: "pink-text-gradient" },
-  ],
-  image: fp1, // Use an appropriate image from your imports
-  source_code_link: "https://github.com/Proximum-AI",
-  featured: true // Add this property to identify featured projects
-};  
+const featuredProject = null
 
 const projects = [
   // First two projects have both GitHub and website links
   {
-    name: "Reddish Trends",
-    description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
+     name: "Reddish Trends",
+  description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
+  tags: [
+    { name: "Next.js", color: "blue-text-gradient" },
+    { name: "Flask", color: "blue-text-gradient" },
+    { name: "TypeScript", color: "green-text-gradient" },
+    { name: "Python", color: "green-text-gradient" },
+    { name: "tailwind", color: "pink-text-gradient" },
+    { name: "OpenAI", color: "pink-text-gradient" },
+    { name: "Firebase", color: "pink-text-gradient" },
+  ],
+  image: pg1,
+  source_code_link: "https://github.com/HaiderMalikk/Reddish-Trends",
+  live_site_link: "https://www.reddishtrends.com", // This project has a website link
+  featured: true // Add this property to identify featured projects
+  },
+  {
+    name: "Reddit Jams",
+    description: "RedditJams is an intelligent music recommendation system that analyzes your Spotify playlist, searches Reddit's music community for similar tastes, and uses GPT-4 to generate personalized song recommendations.",
     tags: [
       { name: "Next.js", color: "blue-text-gradient" },
-      { name: "Flask", color: "blue-text-gradient" },
-      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "FastAPI", color: "blue-text-gradient" },
       { name: "Python", color: "green-text-gradient" },
-      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
       { name: "OpenAI", color: "pink-text-gradient" },
-      { name: "Firebase", color: "pink-text-gradient" },
+      { name: "AI", color: "pink-text-gradient" },
     ],
-    image: pg1,
-    source_code_link: "https://github.com/HaiderMalikk/Reddish-Trends",
-    live_site_link: "https://www.reddishtrends.com", // This project has a website link
+    image: pg5,
+    source_code_link: "https://github.com/HaiderMalikk/RedditJams",
+    live_site_link: "https://redditjams.com", // This project has a website link
   },
   {
     name: "Mood Atlas",
@@ -76,21 +77,19 @@ const projects = [
   },
   // The rest of the projects have only GitHub links (no live_site_link property)
   {
-    name: "Neural Network Circuit Optimizer",
-    description: "The Neural Network Circuit Optimizer, built on my custom digital circuit simulator, uses AI and machine learning to optimize simple digital circuits.",
+    name: "ADA",
+    description: 
+    "ADA (Advanced Digital Agent) is aimed to be a JARVIS like AI that can answer question like siri but with the context of the world around you, and you as the admin controling every move of this Agent.",
     tags: [
       { name: "Python", color: "green-text-gradient" },
-      { name: "C++", color: "green-text-gradient" },
-      { name: "Tensorflow", color: "blue-text-gradient" },
-      { name: "PyTorch", color: "blue-text-gradient" },
-      { name: "Pandas", color: "blue-text-gradient" },
-      { name: "Neural Networks", color: "pink-text-gradient" },
-      { name: "Machine Learning", color: "pink-text-gradient" },
-      { name: "AI", color: "pink-text-gradient" },
-      { name: "SQL", color: "pink-text-gradient" },
-    ],
-    image: pg3,
-    source_code_link: "https://github.com/HaiderMalikk/Neural-Network-Circuit-Optimizer",
+      { name: "Artificial Intelligence", color: "green-text-gradient" },
+      { name: "Machine Learning", color: "green-text-gradient" },
+      { name: "Computer Vision", color: "pink-text-gradient" },
+      { name: "AI Agents", color: "pink-text-gradient" },
+      { name: "Intelligent Systems", color: "pink-text-gradient" },
+  ],
+  image: fp1, // Use an appropriate image from your imports
+  source_code_link: "https://github.com/Proximum-AI",
   },
   // Add the new projects
   {
@@ -106,20 +105,6 @@ const projects = [
     ],
     image: pg4,
     source_code_link: "https://github.com/HaiderMalikk/Supa-Charger-App",
-  },
-  {
-    name: "Smart Paper Summarizer",
-    description:
-      "Smart Paper Summarizer is an AI tool that summarizes educational papers. It uses PyPDF to extract text, OpenAI’s Ada for text embeddings, and Chroma to store and query these embeddings. The context is then passed to GPT-4 mini, which generates concise and accurate summaries.",
-    tags: [
-      { name: "Streamlit", color: "blue-text-gradient" },
-      { name: "Python", color: "green-text-gradient" },
-      { name: "OpenAI", color: "pink-text-gradient" },
-      { name: "Chroma", color: "pink-text-gradient" },
-      { name: "Pandas", color: "pink-text-gradient" },
-    ],
-    image: pg5,
-    source_code_link: "https://github.com/HaiderMalikk/Smart-Paper-Summarizer",
   },
   {
     name: "Chess Engine and Smart Bot",
@@ -297,7 +282,8 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const featuredProjects = [featuredProject];
+  // Filter out null values from featured projects
+  const featuredProjects = featuredProject ? [featuredProject] : [];
   return (
     <div className="bg-transparent mobile-projects-section ">
       {/* Debug element to verify visibility */}

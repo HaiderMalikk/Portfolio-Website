@@ -191,19 +191,6 @@ const experiences = [
 
 const projects = [
   {
-    name: "Proximum AI",
-    description: "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the ADA model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
-    tags: [
-      { name: "Python", color: "green-text-gradient" },
-      { name: "Sqlite", color: "green-text-gradient" },
-      { name: "AI/ML", color: "green-text-gradient" },
-      { name: "Computer Vision", color: "pink-text-gradient" },
-      { name: "AI Agents", color: "pink-text-gradient" },
-      { name: "OpenAI API", color: "pink-text-gradient" },
-    ],
-    source_code_link: "https://github.com/Proximum-AI",
-  },
-  {
     name: "Reddish Trends",
     description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
     tags: [
@@ -217,6 +204,19 @@ const projects = [
     ],
     source_code_link: "https://github.com/HaiderMalikk/Reddish-Trends",
     live_site_link: "https://www.reddishtrends.com", // This project has a website link
+  },
+  {
+    name: "Proximum AI",
+    description: "Proximum AI is an innovative project focused on developing advanced AI agents for real-world applications. Our mission is to create intelligent systems that can understand and interact with the world in meaningful ways, pushing the boundaries of what's possible with artificial intelligence. The latest addition to this project is the ADA model. ADA is designed to be a JARVIS-like AI assistant that can answer questions like Siri but with enhanced contextual awareness of the world around you. As an admin, you have complete control over every action and capability of this agent.",
+    tags: [
+      { name: "Python", color: "green-text-gradient" },
+      { name: "Sqlite", color: "green-text-gradient" },
+      { name: "AI/ML", color: "green-text-gradient" },
+      { name: "Computer Vision", color: "pink-text-gradient" },
+      { name: "AI Agents", color: "pink-text-gradient" },
+      { name: "OpenAI API", color: "pink-text-gradient" },
+    ],
+    source_code_link: "https://github.com/Proximum-AI",
   },
   {
     name: "Mood Atlas",
