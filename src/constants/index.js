@@ -37,7 +37,7 @@ import react from "../assets/tech/reactjs.png"
 import scikit from "../assets/tech/scikit.png"
 import keras from "../assets/tech/keras.png"
 import gcp from "../assets/tech/gcp.png"
-import flask from "../assets/tech/flask.webp"
+import fast from "../assets/tech/fast.svg"
 import aiicon from '../assets/ai.svg'
 import webicon from '../assets/globe.svg'
 import dataicon from '../assets/data.svg'
@@ -115,8 +115,8 @@ const technologies = [
     icon: react,
   },
   {
-    name: "flask",
-    icon: flask,
+    name: "fast",
+    icon: fast,
   },
   {
     name: "tf",
@@ -195,7 +195,7 @@ const projects = [
   description: "Reddish Trends is a Reddit powered stock market analyzer. This is a unique website that uses reddit to uncover stock data and anaylize sentiment data using algorithms, add financial data using yahoo finance and provide feedback using AI. ",
   tags: [
     { name: "Next.js", color: "blue-text-gradient" },
-    { name: "Flask", color: "blue-text-gradient" },
+    { name: "Fast", color: "blue-text-gradient" },
     { name: "TypeScript", color: "green-text-gradient" },
     { name: "Python", color: "green-text-gradient" },
     { name: "tailwind", color: "pink-text-gradient" },
@@ -227,7 +227,7 @@ const projects = [
     description: "Mood Finder is an app that recommends destinations based on user moods or feelings. It uses Google Places API for location data and Google Maps API to display the recommended places. It uses OpenAI API to analyze the mood of the user and recommend places based on that.",
     tags: [
       { name: "Next.js", color: "blue-text-gradient" },
-      { name: "Flask", color: "blue-text-gradient" },
+      { name: "Fast", color: "blue-text-gradient" },
       { name: "TypeScript", color: "green-text-gradient" },
       { name: "Python", color: "green-text-gradient" },
       { name: "OpenAI", color: "pink-text-gradient" },
