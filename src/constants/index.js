@@ -162,7 +162,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Developer Co-op",
+    title: "Software Developer Co-op",
     company_name: "Royal Bank of Canada",
     icon: work2, 
     iconBg: "#548CA8",

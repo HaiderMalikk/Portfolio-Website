@@ -18,7 +18,7 @@ import work2 from "../assets/company/work2.png"; // Make sure this path is corre
 // Modify the experiences array to leave only the Starbucks entry
 const experiences = [
   {
-    title: "Full Stack Developer Co-op",
+    title: "Software Developer Co-op",
     company_name: "Royal Bank of Canada",
     icon: work2, 
     iconBg: "#548CA8",

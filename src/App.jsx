@@ -37,7 +37,7 @@ const App = () => {
                 "@type": "Organization",
                 "name": "York University"
               },
-              "description": "Software Engineering student specializing in AI/ML, data science, and full-stack development.",
+              "description": "Software Engineering student specializing in AI/ML, data science, and Software development.",
               "knowsAbout": ["Python", "Java", "JavaScript", "TypeScript", "React", "NextJS", "Machine Learning", "AI", "Data Science"]
             }
           `}
