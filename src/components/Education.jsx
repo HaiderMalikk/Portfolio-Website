@@ -34,7 +34,7 @@ const Education = () => {
       school: "York University",
       degree: "Bachelor of Engineering in Software Engineering",
       date: "September 2023 - April 2027",
-      description: "• Intro and Advanced OOP • Data Structures • Computer Organization • Embedded Systems • Software Development Project • Mechatronics Programing",
+      description: "• Intro and Advanced OOP • Data Structures • Computer Organization • Embedded Systems • Software Development Project • Mechatronics Programing • Database Systems • Software Design",
       image: "/path/to/university-image.jpg", 
     },
   ];
