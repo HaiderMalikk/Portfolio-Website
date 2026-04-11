@@ -31,7 +31,7 @@ import js from "../assets/tech/js.png"
 import pytorch from "../assets/tech/pytorch.png"
 import tf from "../assets/tech/tf.png"
 import sql from "../assets/tech/sql.webp"
-import opencv from "../assets/tech/opencv.svg"
+import xgboost from "../assets/tech/xgb.png"
 import aws from "../assets/tech/aws.png"
 import react from "../assets/tech/reactjs.png"
 import scikit from "../assets/tech/scikit.png"
@@ -135,8 +135,8 @@ const technologies = [
     icon: scikit,
   },
   {
-    name: "cv",
-    icon: opencv,
+    name: "xg",
+    icon: xgboost,
   },
   {
     name: "aws",
