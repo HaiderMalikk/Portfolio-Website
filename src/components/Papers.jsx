@@ -24,9 +24,9 @@ const papers = [
     pdfUrl: "https://drive.google.com/file/d/1C_0-LcVoGf7Xjw2HtJyq5zyKPWiYOiVX/preview",
   },
   {
-    title: "Enhancing Safety Certification of AI-Driven Autonomous Systemsthrough Explainable AI, Regression Testing, and Standardized Regulations",
+    title: "Enhancing Safety Certification of AI-Driven Autonomous Systems through Explainable AI, Regression Testing, and Standardized Regulations",
     description: 
-    "Artificial intelligence (AI) has transformed operational capabilities and efficiency through itsquick integration into autonomous systems, which span industries like aircraft, healthcare, andtransportation. Nevertheless, this development poses serious difficulties for guaranteeing thesecurity and dependability of these AI-powered systems. For AI applications with probabilisticbehaviours and learning capabilities, traditional certification procedures—which were created fordeterministic systems—are frequently insufficient.",
+    "Artificial intelligence (AI) has transformed operational capabilities and efficiency through its quick integration into autonomous systems, which span industries like aircraft, healthcare, andtransportation. Nevertheless, this development poses serious difficulties for guaranteeing thesecurity and dependability of these AI-powered systems. For AI applications with probabilisticbehaviours and learning capabilities, traditional certification procedures—which were created fordeterministic systems—are frequently insufficient.",
     authors: "Haider Malik",
     date: "March 2025",
     tags: [
