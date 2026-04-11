@@ -80,7 +80,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "AI/ML Engineering",
+    title: "AI/ML",
     icon: aiicon,
   },
   {

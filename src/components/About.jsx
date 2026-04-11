@@ -53,7 +53,7 @@ const About = () => {
           <span className="text-[#F5EFE7] font-medium">Toronto, Canada</span>
         </span>
         <br />
-        Hello! My name is Haider, and I just finished my second year at York University studying Software Engineering. Now I am currently interning at RBC as a Software Developer on the RIG team. I Have Experience In Programming Languages Such As Python, JavaScript AI/ML Frameworks Like Tensorflow, PyTorch and Scikit-learn, Software Development with React, And NextJS and Backend Frameworks Like Flask, ExpressJS. My Interests Include Machine Learning, Data Science, AI research and development and a little bit of Web Development. My Goal Is To Learn Something New Every Day, Whether Through School, LeetCode, Personal Projects, Or Other Activities. I Firmly Believe That Every Bit Of Knowledge Gained, No Matter How Small, Represents Progress.
+        Hi, I’m Haider Malik. I am a third-year Software Engineering student at York University, specializing in Big Data. I’m currently a Software Developer Co-op at RBC, where I work on RBC’s core design system. Previously, at CAPRiser Advisory, I focused on machine learning and AI applications in finance. My core passion is AI safety and alignment, and exploring how we can make Large Language Models safer, more interpretable, and aligned with human intent. I enjoy working across the stack when needed (React, Next.js, Flask, TypeScript), but my true focus lies in AI and ML and working with tools like Python, Pytorch and XGBoost.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
