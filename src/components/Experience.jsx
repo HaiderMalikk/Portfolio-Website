@@ -14,9 +14,21 @@ import { textVariant } from "../utils/motion";
 // Import the starbucks icon or use a placeholder
 import work from "../assets/company/work.jpeg"; // Make sure this path is correct
 import work2 from "../assets/company/work2.png"; // Make sure this path is correct
+import work3 from "../assets/company/work3.jpeg";
 
 // Modify the experiences array to leave only the Starbucks entry
 const experiences = [
+  {
+    title: "Software Developer Co-op",
+    company_name: "D2L · Co-op",
+    icon: work3,
+    iconBg: "#548CA8",
+    date: "September 2026 - December 2026",
+    points: [
+      "Joining the Custom Development Services team working on custom applications and integrations for the Brightspace learning platform.",
+      "Building custom applications that extend or integrate with the core Brightspace learning platform based on client needs.",
+    ],
+  },
   {
     title: "Software Developer Co-op",
     company_name: "Royal Bank of Canada",

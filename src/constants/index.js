@@ -46,6 +46,7 @@ import book from '../assets/book.svg'
 import bike from '../assets/bike.svg'
 import teach from '../assets/teach.svg'
 import work2 from "../assets/company/work2.png"; // Make sure this path is correct
+import work3 from "../assets/company/work3.jpeg";
 
 export const navLinks = [
   {
@@ -161,6 +162,17 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Software Developer Co-op",
+    company_name: "D2L · Co-op",
+    icon: work3,
+    iconBg: "#548CA8",
+    date: "September 2026 - Present",
+    points: [
+      "Joining the Custom Development Services team working on custom applications and integrations for the Brightspace learning platform.",
+      "Building custom applications that extend or integrate with the core Brightspace learning platform based on client needs.",
+    ],
+  },
   {
     title: "Software Developer Co-op",
     company_name: "Royal Bank of Canada",

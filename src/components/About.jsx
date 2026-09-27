@@ -53,7 +53,7 @@ const About = () => {
           <span className="text-[#F5EFE7] font-medium">Toronto, Canada</span>
         </span>
         <br />
-        Hi, I’m Haider Malik. I am a third-year Software Engineering student at York University, specializing in Big Data. Previously, I worked as a Software Developer Co-op at RBC, where I work on RBC’s core design system. Previously, at CAPRiser Advisory, I focused on machine learning and AI applications in finance. My core passion is AI safety and alignment, and exploring how we can make Large Language Models safer, more interpretable, and aligned with human intent. I enjoy working across the stack when needed (React, Next.js, Flask, TypeScript), but my true focus lies in AI and ML and working with tools like Python, Pytorch and XGBoost.
+        Hi, I’m Haider Malik. I am a third-year Software Engineering student at York University, specializing in Big Data. Currently i work at D2L where i build custom development services for the Brightspace platform. Previously, I was a Software Developer Co-op at RBC, where I worked on RBC’s core design system. Previously, at CAPRiser Advisory, I focused on machine learning and AI applications in finance. My core passion is AI safety and alignment, and exploring how we can make Large Language Models safer, more interpretable, and aligned with human intent. I enjoy working across the stack when needed (React, Next.js, Flask, TypeScript), but my true focus lies in AI and ML and working with tools like Python, Pytorch and XGBoost.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
