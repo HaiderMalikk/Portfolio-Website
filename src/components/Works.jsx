@@ -61,7 +61,7 @@ const projects = [
   },
   {
     name: "Mood Atlas",
-    description: "Mood Finder is an app that recommends destinations based on user moods or feelings. It uses Google Places API for location data and Google Maps API to display the recommended places. It uses OpenAI API to analyze the mood of the user and recommend places based on that.",
+    description: "Mood Atlas is an app that recommends destinations based on user moods or feelings. It uses Google Places API for location data and Google Maps API to display the recommended places. It uses OpenAI API to analyze the mood of the user and recommend places based on that.",
     tags: [
       { name: "Next.js", color: "blue-text-gradient" },
       { name: "Flask", color: "blue-text-gradient" },
